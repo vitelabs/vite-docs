@@ -5,7 +5,7 @@ order: 1
 # ViteX REST API
 
 :::tip Notice
-- New v2 ViteX API is released. The v1 API is deprecated and will stop service soon. Please kindly upgrade your client ASAP.
+- New v2 ViteX API is released. The v1 API is deprecated and service is stopped. Please upgrade your client.
 :::
 
 ## Overview
