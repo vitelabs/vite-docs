@@ -106,7 +106,7 @@ module.exports = {
             children: [
               {
                 title: "Contributing to the docs",
-                url: "https://github.com/vitelabs/go-vite/blob/master/docs/DOCS_README.md"
+                url: "https://github.com/vitelabs/vite-docs/blob/master/DOCS_README.md"
               },
             ]
           }

@@ -3,9 +3,6 @@ sidebarDepth: 4
 ---
 
 # Mintage
-:::tip Maintainer
-[viteLiz](https://github.com/viteLiz)
-:::
 
 ## Contract Specification
 Built-in token issuance contract. Contract address is `vite_000000000000000000000000000000000000000595292d996d`

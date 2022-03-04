@@ -1,9 +1,5 @@
 # TestApi
 
-:::tip Maintainer
-[TiantaoZhu](https://github.com/TiantaoZhu)
-:::
-
 ## testapi_getTestToken
 Obtain Vite test tokens. This method will randomly send 1-1001 test tokens to specified address.
 

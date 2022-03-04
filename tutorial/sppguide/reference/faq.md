@@ -19,4 +19,4 @@ Open [http://viteview.xyz/](http://viteview.xyz/), fill in `https://buidl.vite.n
 The Vite app wallet does not fully support the Testnet. So please do not use the Vite app in the Testnet. You can generate a test-only seed phrase in the Vite app (or in the soliditypp Visual studio code extension), and then restore it into the Testnet web wallet. (https://buidl.vite.net/).
 
 #### Q: How can I use the ViteX API in the Testnet? 
-Use ```https://buidl.vite.net/vitex/api/v2``` along with the [Trade API](https://docs.vite.org/go-vite/dex/api/dex-apis.html).
+Use ```https://buidl.vite.net/vitex/api/v2``` along with the [Trade API](/dex/api/rest-api.md).

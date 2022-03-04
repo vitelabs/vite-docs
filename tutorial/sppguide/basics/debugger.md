@@ -7,7 +7,7 @@ Before reading this page, you should have already followed the [installation gui
 
 <br>
 <div class="mydiv" style="height:15em; display: flex; justify-content: space-between;">
-<div class="mydiv" style="float:left;height:100%;margin:0 auto; text-align:center; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"><img class="myimg" src="debugger/debugger.png" style="max-height: 100%; max-width: 100%; display: block; margin: 0; width: auto; height: auto;"><br>Debugger interface</div>
+<div class="mydiv" style="float:left;height:100%;margin:0 auto; text-align:center; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"><img class="myimg" src="./debugger/debugger.png" style="max-height: 100%; max-width: 100%; display: block; margin: 0; width: auto; height: auto;"><br>Debugger interface</div>
 </div>
 <br><br><br>
 
@@ -23,7 +23,7 @@ Please note that all data will be cleared from the local debug node after stoppi
 The debugger interface is split into several sections as shown below.
 <br>
 <div style="display: flex; justify-content: space-between;">
-<div style="float:left;width:80%;margin:0 auto; text-align:center;"><img src="debugger/debugsections.png" style="max-height: 100%; max-width: 100%; display: block;  margin: 0; width: auto; height: auto; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"><br>Debugger Layout</div>
+<div style="float:left;width:80%;margin:0 auto; text-align:center;"><img src="./debugger/debugsections.png" style="max-height: 100%; max-width: 100%; display: block;  margin: 0; width: auto; height: auto; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"><br>Debugger Layout</div>
 </div>
 <br>
 - [Network/Wallet](#network-wallet)
@@ -37,7 +37,7 @@ The debugger interface is split into several sections as shown below.
 
 <br>
 <div style="height:10em; display: flex; justify-content: space-between;">
-<div style="float:left;height:100%;margin:0 auto; text-align:center; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"><img src="debugger/network.png" style="max-height: 100%; max-width: 100%; display: block;  margin: 0; width: auto; height: auto;"><br>Network/Wallet</div>
+<div style="float:left;height:100%;margin:0 auto; text-align:center; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"><img src="./debugger/network.png" style="max-height: 100%; max-width: 100%; display: block;  margin: 0; width: auto; height: auto;"><br>Network/Wallet</div>
 </div>
 <br><br><br>
 
@@ -57,7 +57,7 @@ The debugger interface is split into several sections as shown below.
 
 <br>
 <div style="height:12em; display: flex; justify-content: space-between;">
-<div style="float:left;height:100%;margin:0 auto; text-align:center; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"><img src="debugger/deploy.png" style="max-height: 100%; max-width: 100%; display: block;  margin: 0; width: auto; height: auto;"><br>Contract Deployment</div>
+<div style="float:left;height:100%;margin:0 auto; text-align:center; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"><img src="./debugger/deploy.png" style="max-height: 100%; max-width: 100%; display: block;  margin: 0; width: auto; height: auto;"><br>Contract Deployment</div>
 </div>
 <br><br><br>
 
@@ -90,7 +90,7 @@ If a contract uses timestamps, snapshot block height, or random numbers, then th
 
 <br>
 <div style="height:6em; display: flex; justify-content: space-between;">
-<div style="float:left;height:100%;margin:0 auto; text-align:center; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"><img src="debugger/load.png" style="max-height: 100%; max-width: 100%; display: block;  margin: 0; width: auto; height: auto;"><br>Load a Contract</div>
+<div style="float:left;height:100%;margin:0 auto; text-align:center; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"><img src="./debugger/load.png" style="max-height: 100%; max-width: 100%; display: block;  margin: 0; width: auto; height: auto;"><br>Load a Contract</div>
 </div>
 <br><br><br>
 
@@ -102,7 +102,7 @@ Note that the currently selected contract in the deployment menu must have the c
 
 <br>
 <div style="height:12em; display: flex; justify-content: space-between;">
-<div style="float:left;height:100%;margin:0 auto; text-align:center; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"><img src="debugger/contract.png" style="max-height: 100%; max-width: 100%; display: block;  margin: 0; width: auto; height: auto;"><br>Contract Interaction</div>
+<div style="float:left;height:100%;margin:0 auto; text-align:center; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"><img src="./debugger/contract.png" style="max-height: 100%; max-width: 100%; display: block;  margin: 0; width: auto; height: auto;"><br>Contract Interaction</div>
 </div>
 <br><br><br>
 
@@ -119,17 +119,17 @@ This menu only appears after a contract has been deployed or loaded, and is used
 
 <br>
 <div style="height:10em; display: flex; justify-content: space-between;">
-<div style="float:left;height:100%;margin:0 auto; text-align:center; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"><img src="debugger/log2.png" style="max-height: 100%; max-width: 100%; display: block;  margin: 0; width: auto; height: auto;"><br>Log</div>
+<div style="float:left;height:100%;margin:0 auto; text-align:center; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"><img src="./debugger/log2.png" style="max-height: 100%; max-width: 100%; display: block;  margin: 0; width: auto; height: auto;"><br>Log</div>
 </div>
 <br><br><br>
 
-* The log shows details for for any `Send` or `Receive` transactions added to the current account. Contract response transactions are also be logged. Each transaction can be expended for additional details, for definitions see [account block details](https://docs.vite.org/go-vite/api/rpc/common_models_v2.html#accountblock).
+* The log shows details for for any `Send` or `Receive` transactions added to the current account. Contract response transactions are also be logged. Each transaction can be expended for additional details, for definitions see [account block details](/api/rpc/common_models_v2.html#accountblock).
 
 ## Settings
 
 <br>
 <div style="height:15em; display: flex; justify-content: space-between;">
-<div style="float:left;height:100%;margin:0 auto; text-align:center; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"><img src="debugger/settings.png" style="max-height: 100%; max-width: 100%; display: block;  margin: 0; width: auto; height: auto;"><br>Settings Menu</div>
+<div style="float:left;height:100%;margin:0 auto; text-align:center; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"><img src="./debugger/settings.png" style="max-height: 100%; max-width: 100%; display: block;  margin: 0; width: auto; height: auto;"><br>Settings Menu</div>
 </div>
 <br><br><br>
 

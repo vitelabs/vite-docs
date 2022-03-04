@@ -262,7 +262,7 @@ For all trades on ViteX, incomplete orders do not incur any trading fees.
 ***Total Trading Fee = Base Trading Fee + Operator Fee***
 
 :::tip Free Order Placement and Cancellation
-Unlike other decentralized exchange, ViteX does not charge fees for order placement or cancellation. However, the user must have sufficient quota to perform the operation. Related link: [What is quota](../tutorial/rule/quota.html). 
+Unlike other decentralized exchange, ViteX does not charge fees for order placement or cancellation. However, the user must have sufficient quota to perform the operation. Related link: [What is quota](../reference/quota.md). 
 :::
 
 **Base Trading Fee**: ***0.2%***

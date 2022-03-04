@@ -3,9 +3,6 @@ sidebarDepth: 4
 ---
 
 # ConsensusGroup
-:::tip Maintainer
-[viteLiz](https://github.com/viteLiz)
-:::
 
 ## Contract Specification
 Built-in consensus group contract. Contract address is `vite_0000000000000000000000000000000000000004d28108e76b`

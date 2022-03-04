@@ -15,7 +15,7 @@ Market trends API (also known as public API) provides market data, information q
 
 ## Base Endpoint
 * **[MainNet]**: `https://api.vitex.net/`
-* **[TestNet]**: `https://api.vitex.net/test`
+* **[TestNet]**: `https://buidl.vitex.net/open`
 
 ## API Response
 API response is returned in JSON. 

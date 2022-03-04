@@ -1,9 +1,5 @@
 # Pow
 
-:::tip Maintainer
-[TiantaoZhu](https://github.com/TiantaoZhu)
-:::
-
 ## pow_getPowNonce
 Calculate a PoW nonce by given difficulty and return. Usually this method is used to obtain temporary quota upon sending a transaction without staking.
 

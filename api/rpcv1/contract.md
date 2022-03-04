@@ -4,10 +4,6 @@ sidebarDepth: 4
 
 # Contract
 
-:::tip Maintainer
-[viteLiz](https://github.com/viteLiz)
-:::
-
 ## Create Contract
 
 Essentially, creating contract is sending a special transaction whose transaction type is 1 with contract's code and specified parameters. It has the following steps.

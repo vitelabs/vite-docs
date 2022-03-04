@@ -2,7 +2,7 @@
 The recommended development environment for Solidity++ is **Visual Studio Code**, for which Vite Labs has developed the **Soliditypp** extension containing a ready-to-go compiler and debugging environment. Follow the [instructions](#installing-the-visual-studio-code-extension) below for installing and testing.<!--, or if you prefer, there is a [video guide]() for setting up the environment.-->
 
 ::: tip Manual Compiler Installation:
-Instructions for installation *without* VSCode [here](https://docs.vite.org/go-vite/contract/debug.html#debugging-in-command-line).  **(not recommended for most users)**
+Instructions for installation *without* VSCode [here](/contract/debug.html#debugging-in-command-line).  **(not recommended for most users)**
 :::
 
 ## Installing the Visual Studio Code Extension
@@ -12,8 +12,8 @@ Instructions for installation *without* VSCode [here](https://docs.vite.org/go-v
 2. Within VSCode, navigate to the **Extensions** panel and search for "ViteLabs" and install the **Soliditypp** extension.
 
 <div style="height:15em; display: flex; justify-content: space-between;">
-<div style="float:left;height:100%;margin:0 auto; text-align:center; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"><img src="installation/install1.png" style="max-height: 100%; max-width: 100%; display: block; margin: 0; width: auto; height: auto;"><br>Open extensions panel.</div>
-<div style="float:left;height:100%;margin:0 auto; text-align:center; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"><img src="installation/install2.png" style="max-height: 100%; max-width: 100%; display: block; margin: 0; width: auto; height: auto;"><br>Install Soliditypp extension.</div>
+<div style="float:left;height:100%;margin:0 auto; text-align:center; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"><img src="./installation/install1.png" style="max-height: 100%; max-width: 100%; display: block; margin: 0; width: auto; height: auto;"><br>Open extensions panel.</div>
+<div style="float:left;height:100%;margin:0 auto; text-align:center; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"><img src="./installation/install2.png" style="max-height: 100%; max-width: 100%; display: block; margin: 0; width: auto; height: auto;"><br>Install Soliditypp extension.</div>
 </div>
 <br><br><br>
 
@@ -27,8 +27,8 @@ That's it! Now you can proceed to test your environment by [deploying a contract
 
 <br>
 <div style="height:15em; display: flex; justify-content: space-between;">
-<div style="float:left;height:100%;margin:0 auto; text-align:center;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"><img src="installation/install3.png" style="max-height: 100%; max-width: 100%; display: block; margin: 0; width: auto; height: auto;"><br>Create a launch.json file.</div>
-<div style="float:left;height:100%;margin:0 auto; text-align:center;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"><img src="installation/install4.png" style="max-height: 100%; max-width: 100%; display: block; margin: 0; width: auto; height: auto;"><br>Choose "Soliditypp" enviornment.</div>
+<div style="float:left;height:100%;margin:0 auto; text-align:center;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"><img src="./installation/install3.png" style="max-height: 100%; max-width: 100%; display: block; margin: 0; width: auto; height: auto;"><br>Create a launch.json file.</div>
+<div style="float:left;height:100%;margin:0 auto; text-align:center;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"><img src="./installation/install4.png" style="max-height: 100%; max-width: 100%; display: block; margin: 0; width: auto; height: auto;"><br>Choose "Soliditypp" enviornment.</div>
 </div>
 <br><br><br>
 
@@ -50,33 +50,33 @@ You can automatically generate a `HelloWorld.solpp` contract by using the Solidi
 
 <br>
 <div style="height:15em; display: flex; justify-content: space-between;">
-<div style="float:left;height:100%;margin:0 auto; text-align:center; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"><img src="installation/debuginterface.png" style="max-height: 100%; max-width: 100%; display: block; margin: 0; width: auto; height: auto;"><br>Debugger interface.</div>
+<div style="float:left;height:100%;margin:0 auto; text-align:center; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"><img src="./installation/debuginterface.png" style="max-height: 100%; max-width: 100%; display: block; margin: 0; width: auto; height: auto;"><br>Debugger interface.</div>
 </div>
 <br><br><br>
 
 ::: warning Compiler Errors
 If the debugger interface doesn't launch, check the debug console and fix any errors:
 
-![](installation/compileerror.png)
+![](./installation/compileerror.png)
 :::
 
 5. To deploy your contract on to the local debug node, simply press **Deploy** as shown below. There are several options available, but use the default values for now (later we will cover the [other options available in the debug interface](../basics/debugger/)).
 
 <br>
 <div style="height:15em; display: flex; justify-content: space-between;">
-<div style="float:left;height:100%;margin:0 auto; text-align:center; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"><img src="installation/debugdeploy.png" style="max-height: 100%; max-width: 100%; display: block; margin: 0; width: auto; height: auto;"><br>Deploy the contract.</div>
+<div style="float:left;height:100%;margin:0 auto; text-align:center; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"><img src="./installation/debugdeploy.png" style="max-height: 100%; max-width: 100%; display: block; margin: 0; width: auto; height: auto;"><br>Deploy the contract.</div>
 </div>
 <br><br><br>
 
 6. When the contract is successfully deployed, a contract interface will appear, shown below, which we can use to call our contract. The function `sayHello` requires an address `dest` as an argument, so for testing let's copy our *own* address, which we can copy from the "Selected Address:" box.
 
 <div style="height:3em; display: flex; justify-content: space-between;">
-<div style="float:left;height:100%;margin:0 auto; text-align:center; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"><img src="installation/debugaddress.png" style="max-height: 100%; max-width: 100%; display: block; margin: 0; width: auto; height: auto;"></div>
+<div style="float:left;height:100%;margin:0 auto; text-align:center; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"><img src="./installation/debugaddress.png" style="max-height: 100%; max-width: 100%; display: block; margin: 0; width: auto; height: auto;"></div>
 </div>
 
 <br>
 <div style="height:15em; display: flex; justify-content: space-between;">
-<div style="float:left;height:100%;margin:0 auto; text-align:center; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"><img src="installation/debuginteract.png" style="max-height: 100%; max-width: 100%; display: block; margin: 0; width: auto; height: auto;"><br>Call the contract function "sayHello".</div>
+<div style="float:left;height:100%;margin:0 auto; text-align:center; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"><img src="./installation/debuginteract.png" style="max-height: 100%; max-width: 100%; display: block; margin: 0; width: auto; height: auto;"><br>Call the contract function "sayHello".</div>
 </div>
 <br><br><br>
 
@@ -84,7 +84,7 @@ If the debugger interface doesn't launch, check the debug console and fix any er
 
 <br>
 <div style="height:15em; display: flex; justify-content: space-between;">
-<div style="float:left;height:100%;margin:0 auto; text-align:center; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"><img src="installation/debuglog.png" style="max-height: 100%; max-width: 100%; display: block; margin: 0; width: auto; height: auto;"><br>Successful VMlog output.</div>
+<div style="float:left;height:100%;margin:0 auto; text-align:center; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"><img src="./installation/debuglog.png" style="max-height: 100%; max-width: 100%; display: block; margin: 0; width: auto; height: auto;"><br>Successful VMlog output.</div>
 </div>
 <br><br><br>
 

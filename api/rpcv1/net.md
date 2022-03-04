@@ -1,9 +1,5 @@
 # Net
 
-:::tip Maintainer
-[jerry-vite](https://github.com/jerry-vite)
-:::
-
 ## net_syncInfo
 Return sync status of the node
 

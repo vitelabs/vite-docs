@@ -9,7 +9,7 @@ See [Run a Local Dev Node](../../tutorial/contract/testnode.html) - a guide to s
 
 ## Quota
 
-Quota are consumed in Vite for sending/receiving transactions. To obtain quota, you can choose to solve a simple PoW puzzle or stake VITE coin (recommended). For more information, please see [Quota Introduction](../../tutorial/rule/quota.html).
+Quota are consumed in Vite for sending/receiving transactions. To obtain quota, you can choose to solve a simple PoW puzzle or stake VITE coin (recommended). For more information, please see [Quota Introduction](../../reference/quota.md).
 
 ## Wallet
 

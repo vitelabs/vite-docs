@@ -7,8 +7,8 @@ order: false
 - [Official Documentation](https://docs.vite.org/)
 
 <!--
-- [Vite Account Block Definitions](https://docs.vite.org/go-vite/api/rpc/common_models_v2.html#accountblock)
-- [Virtual Machine Instruction Set](https://docs.vite.org/go-vite/contract/instructions.html)
+- [Vite Account Block Definitions](./api/rpc/common_models_v2.html#accountblock)
+- [Virtual Machine Instruction Set](./contract/instructions.html)
 -->
 
 ### Community

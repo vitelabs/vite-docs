@@ -33,7 +33,7 @@ Make sure to save the contract address and keep the debugger interface open for 
 ## Interact using Vite.js
 
 More Vite.js details here:
-[full documentation for Vite.js](https://docs.vite.org/vite.js/)
+[full documentation for Vite.js](/vite.js/start.md)
 
 1. Launch a terminal and open the folder containing your `HelloWorld.solpp` file. Here you can install Vite.js:
  

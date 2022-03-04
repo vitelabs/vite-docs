@@ -49,7 +49,7 @@ This is not a secure method for generating a Vite wallet. This is not an issue f
 Go to the [Vite Discord](https://discordapp.com/invite/CsVY76q) and send a DM containing `!send vite_yourtestnetaddress` to the bot @faucet (see image). Your address will be provided with 10,000 Vite.
 <br>
 <div style="height:15em; display: flex; justify-content: space-between;">
-<div style="float:left;height:100%;margin:0 auto; text-align:center; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"><img src="dev-wallet/faucet.png" style="max-height: 100%; max-width: 100%; display: block; margin: 0; width: auto; height: auto;"><br>Get testnet Vite through Discord.</div>
+<div style="float:left;height:100%;margin:0 auto; text-align:center; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"><img src="./dev-wallet/faucet.png" style="max-height: 100%; max-width: 100%; display: block; margin: 0; width: auto; height: auto;"><br>Get testnet Vite through Discord.</div>
 </div>
 <br><br><br>
 

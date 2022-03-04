@@ -19,11 +19,11 @@ Quota is necessary for sending transaction on Vite. In the Mainnet, quota can be
 
 ## Token Issuance
 
-Refer to [RPC Token Issuance API](https://docs.vite.org/go-vite/api/rpc/contract_v2.html#token-issuance-contract)
+Refer to [RPC Token Issuance API](/api/rpc/contract_v2.html#token-issuance-contract)
 
 ## Subscription
 
-Event subscription is provided in `ViteAPI`. Refer to [ViteAPI](https://docs.vite.org/vite.js/viteAPI/#subscribe) for detailed information
+Event subscription is provided in `ViteAPI`. Refer to [ViteAPI](/vite.js/viteAPI/#subscribe) for detailed information
 
 ## Sending Transaction
 

@@ -20,9 +20,9 @@ This can be done entirely within VSCode and the Solidity++ extension, following 
 There is a much greater freedom when it comes to developing an interface to interact with a smart contract. For starters, the platform can be anything: an Android App, an iPhone app, a website, a browser plugin, a command-line interface, a shell script, etc.
 
 There are several tools available to help you build interfaces:
-- Vite Labs has both a [JavaScript API](https://docs.vite.org/vite.js/) and a [Java API](https://docs.vite.org/vitej/) for interfacing with nodes/contracts.
+- Vite Labs has both a [JavaScript API](/vite.js/start.md) and a [Java API](/vitej/start.md) for interfacing with nodes/contracts.
 - Using the [Solidity++ VSCode extension's debugger interface](./debugger/).
-- Vite node [RPC calls](https://docs.vite.org/go-vite/contract/debug.html#create-contract) can be invoked directly.
+- Vite node [RPC calls](/api/rpc/) can be invoked directly.
 - Wallet authentication through [ViteConnect](https://github.com/vitelabs/vite-connect-client) is also possible.
 
 We cover some simple examples of [interacting with contracts](../tutorials/hello-world/) to get you started, but you'll want to supplement this guide with other resources for developing for your target platform.

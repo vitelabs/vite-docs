@@ -1,5 +1,5 @@
 ---
-demoUrl: "https://vitex.vite.net/test"
+demoUrl: "https://buidl.vite.net/vitex"
 ---
 
 # Data Query API (deprecated)
@@ -10,7 +10,7 @@ demoUrl: "https://vitex.vite.net/test"
 
 * **Mainnet**: https://vitex.vite.net/
 
-* **Test**: https://vitex.vite.net/test
+* **Test**: https://buidl.vite.net/vitex
 
 ### `/api/v1/limit`
 
@@ -897,7 +897,7 @@ Get the current time in milliseconds according to the HTTP service
 ### Network
 * **Mainnet**: https://vitex.vite.net/websocket
 
-* **Testnet**: https://vitex.vite.net/test/websocket
+* **Testnet**: https://buidl.vite.net/vitex/websocket
 
 * op_type: The `ping` heartbeat message needs to be sent at least once per minute. If the interval exceeds 1 minute, the registered event will expire.
 

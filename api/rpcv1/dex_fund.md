@@ -2,12 +2,6 @@
 sidebarDepth: 4
 ---
 
-# DexFund
-:::tip Maintainer
-[weichaolee](https://github.com/weichaolee)
-[vite-crzn](https://github.com/vite-crzn)
-:::
-
 ## RPC interface
 
 **Supported protocol:**

@@ -1,7 +1,4 @@
 # Ledger
-:::tip Maintainer
-[lyd00](https://github.com/lyd00)
-:::
 
 ## ledger_getBlocksByAccAddr
 Return transaction list of the specified account

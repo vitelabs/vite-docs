@@ -15,7 +15,7 @@ Following the [ViteX Gateway Protocol](gateway-protocol.md), anyone can setup a 
 ## How to Create a ViteX Gateway
 ### Pre-requisites
 
-* Forge a new token on Vite chain to represent the digital asset in the Source Chain. See [here](../../tutorial/rule/mintage.html) for instructions of token forging. The new token should have the same total issuance amount and decimal places as the Source Chain asset.
+* Forge a new token on Vite chain to represent the digital asset in the Source Chain. See [here](../../reference/mintage.md) for instructions of token forging. The new token should have the same total issuance amount and decimal places as the Source Chain asset.
 * The operator must be able to verify and send transactions for Gateway Token. To do so, she can either run a Vite full node or use API from full nodes from Vite team. 
 > * Instructions for how to run a Vite full node are [here](../../tutorial/node/install.html). 
 > * Instructions for sending and inquiring about Vite transactions are [here](../../api/rpc/).
@@ -23,11 +23,11 @@ Following the [ViteX Gateway Protocol](gateway-protocol.md), anyone can setup a 
 
 ### How to Integrate
 
-* The developer would need to use a testing environment. ([https://x-test.vite.net/assets](https://x-test.vite.net/assets)).
+* The developer would need to use a testing environment. ([https://buidl.vite.net/assets](https://buidl.vite.net/assets)).
 * Forge the coin in the testing environment. In the below screenshot, we assume ETH-0 as the token forged.
 
-* ![](crosschain-seturl.png)
-* ![](crosschain-debug.png)
+* ![](./crosschain-seturl.png)
+* ![](./crosschain-debug.png)
 
 ## Tips for Properly Operating a Gateway
 ### Asset Custody

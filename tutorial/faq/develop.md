@@ -104,10 +104,10 @@ Insufficient quota to finish the transaction. You should follow the below steps.
 
 ## Stake for Quota
 
-The available quota of the account relies on how much VITE has been staked and the actual use of quota in the past 74 snapshot blocks. Refer to [Quota Consumption Rules](../rule/quota.html#quota-consumption-rules) to know how quota works on Vite. 
+The available quota of the account relies on how much VITE has been staked and the actual use of quota in the past 74 snapshot blocks. Refer to [Quota Consumption Rules](../../reference/quota.md#quota-consumption-rules) to know how quota works on Vite. 
 
 There are two ways to know the staking amount:
-* Refer to [Quota Calculation](../rule/quota.html#quota-calculation) and make the estimation
+* Refer to [Quota Calculation](../../reference/quota.md#quota-calculation) and make the estimation
 * See [Get Minimum Required Stake Amount](../../api/rpc/contract_v2.html#contract-getrequiredstakeamount)
 
 For example, account A needs to send two transfers (having no comment) in 75 seconds, consuming 21000*2 quota, according to the above table, the required staking amount is 267 VITE.

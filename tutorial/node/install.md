@@ -264,4 +264,4 @@ Scroll to filter box and input your node name from above.
 
 * [Super node configuration](sbp.md)
 * [Wallet management](wallet-manage.md)
-* [Super node rules](../rule/sbp.md)
+* [Super node rules](/reference/sbp.md)

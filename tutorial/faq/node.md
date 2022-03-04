@@ -84,8 +84,8 @@ Follow the below steps to check.
 * Make sure the timestamp on the node is accurate;
 * Make sure the node has 4 CPUs and 8GB RAM installed with 5M bps internet connection, and there is no other program occupying the CPU, RAM, disk I/O and network bandwidth;
 * Check node_config.json, make sure `Miner` is set to true, `EntropyStorePath` and `EntropyStorePassword` are correctly configured;
-* Check the registration information of the SBP on [Vite block explorer](https://explorer.vite.net/SBPList) to make sure the current block creation address matches the address configured in `EntropyStorePath`;
-* Check the SBP rank on [Vite block explorer](https://explorer.vite.net/SBPList). SBP nodes ranked after 25 have a smaller rate to produce blocks. SBP ranked after 100 do not have chance to produce snapshot block;
+* Check the registration information of the SBP on [Vite block explorer](https://viteview.xyz/#/sbps) to make sure the current block creation address matches the address configured in `EntropyStorePath`;
+* Check the SBP rank on [Vite block explorer](https://viteview.xyz/#/sbps). SBP nodes ranked after 25 have a smaller rate to produce blocks. SBP ranked after 100 do not have chance to produce snapshot block;
 * Restart the node;
 * If the problem still exists, send the latest log under ~/.gvite/maindata/runlog/ to Vite technical support for further investigation.
 
@@ -193,7 +193,7 @@ curl -X POST \
 ```
 
 ### How is the SBP reward allocated?
-See [SBP reward rules](../rule/sbp.html#sbp-rewards). You can download a detailed voting spreadsheet from the SBP details page of explorer. 
+See [SBP reward rules](../../reference/sbp.md#sbp-rewards). You can download a detailed voting spreadsheet from the SBP details page of explorer. 
 
 ### Can I copy the ledger files to a new node? 
 Copying ledger files to another node is allowed. Be noted to stop the node first, and you just need to copy `{datadir}/maindata/ledger` folder. 

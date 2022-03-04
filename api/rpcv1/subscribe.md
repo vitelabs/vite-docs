@@ -4,10 +4,6 @@ sidebarDepth: 4
 
 # Subscribe
 
-:::tip Maintainer
-[viteLiz](https://github.com/viteLiz)
-:::
-
 ## Event Subscription 
 
 To address different scenarios, subscription through **polling** and **callback** are both provided in Vite as two options.
