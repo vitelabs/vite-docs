@@ -60,7 +60,7 @@ The following illustrates the workflow of an Ethereum Gateway.
 
 The Gateway needs to maintain the following types of addresses:
 
-![](crosschain-wallet.png)
+![](./crosschain-wallet.png)
 
 1. Cold wallet addresses, including ETH addresses and VITE addresses. Large amounts of assets should be stored in the cold wallet to ensure asset safety.
 2. Hot wallet addresses, including ETH addresses and VITE addresses. They are used to accommodate daily transfers.

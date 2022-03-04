@@ -118,7 +118,7 @@ Fill in **Node Name** and **Block Creation Address**.
 
 Please note that **Block Creation Address** is the address you configured on node server and is only responsible for producing new blocks. Do NOT use your **Staking Address** as **Block Creation Address**.
 
-![](node-register.png)
+![](./node-register.png)
 
 ### SBP Name
 

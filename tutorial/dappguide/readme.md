@@ -8,7 +8,7 @@ parent:
 # Get Started
 
 ## How dApp Works in Vite
-![](dapp-architecture.png)
+![](./dapp-architecture.png)
 
 Above diagram shows how dApp works in Vite. In general, a dApp consists of one (or several) smart contract and companion web application. dApp communicates to a full node (private or non-private) via HTTP or WebSocket connection, fetches data from blockchain and then displays on the webpage. Usually dApp doesn't manage private keys and addresses. Instead, a dApp establishes a connection to Vite wallet (where mnemonic seed and private keys are managed) for sending/receiving transactions, calling smart contract deployed on blockchain, etc. 
 To set up the connection between dApp and Vite wallet, at present there are three options.
@@ -29,7 +29,7 @@ We recommend ViteConnect. ViteConnect establishes WebSocket connection between d
 * Set up a full node that provides both HTTP and WebSocket RPC services;
 * Deploy smart contract on blockchain and stake VITE coins for the contract's account to make sure it has enough quota;
 * Deploy companion web application;
-* Test dApp's functionalities to make sure it works well. If it should integrate with Vite wallet, test in [Vite Test Wallet](./testdapp.html).
+* Test dApp's functionalities to make sure it works well. If it should integrate with Vite wallet, test in [Vite Test Wallet](../sppguide/tutorials/dev-wallet.md).
 
 ## Before Development
 
@@ -39,7 +39,7 @@ See [Run Local Development Node](./testnode.html) to install your local developm
 
 ### Install Vite.js
 
-Install the latest release of [Vite.js](../../api/vitejs/README.md). Vite.js is the Javascript SDK provided by Vite team. 
+Install the latest release of [Vite.js](/vite.js/start.md). Vite.js is the Javascript SDK provided by Vite team. 
 
 ### Download `solppc`
 
@@ -47,7 +47,7 @@ Download the latest Solidity++ compiler at [solppc Releases](https://github.com/
 
 ### Install Test Wallet (optional)
 
-Setup [Vite Test Wallet](./testdapp.html) to connect to your development node.
+Setup [Vite Test Wallet](../sppguide/tutorials/dev-wallet.md) to connect to your development node.
 
 ## Debug Contract
 
@@ -330,7 +330,7 @@ You may use the following APIs in your dApp.
 
 For API definitions for all RPC methods, please visit [RPC API](../../api/rpc/)
 
-To learn more abut calling RPC API in Vite.js, please visit [Vite.js SDK](../../api/vitejs/ViteAPI/GViteRPC.html#how-to-call-gvite-rpc-methods)
+To learn more abut calling RPC API in Vite.js, please visit [Vite.js SDK](/vite.js/ViteAPI/GViteRPC.html#how-to-call-gvite-rpc-methods)
 
 ### Event Subscription
 

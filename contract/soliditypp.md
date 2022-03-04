@@ -103,7 +103,7 @@ After A and B are deployed, a client can invoke `B.inc()` function to increment 
 
 The execution is NOT in a single transaction, instead, there are multiple transactions initiated and propagated on Vite blockchain.
 
-![example-0.8.0](solpp-0.8.0.png)
+![example-0.8.0](./solpp-0.8.0.png)
 
 * When the client invokes `B.inc()`, a request transaction *S1(C->B)* (from the client to B) is initiated.
 * Vite is listening all open request transactions to the address of contract B. Once *S1* is discovered, Vite VM is activated and the code of `B.inc()` is executed. A response transaction *R1(S1)* (linked to *S1*) will be initiated after the execution.
@@ -147,7 +147,7 @@ contract B {
 ```
 It's not required to declare callbacks explicitly in 0.8.1, the solppc compiler will generate callbacks for each await expression under the hood.
 
-![example-0.8.1](solpp-0.8.1.png)
+![example-0.8.1](./solpp-0.8.1.png)
 
 * When the client invokes `B.inc()`, a request transaction *S1(C->B)* is initiated.
 * Once *S1* is dicovered and accepted, the code of `B.inc()` is executed. 

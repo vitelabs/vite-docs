@@ -57,7 +57,7 @@ The total supply of VX is ***29,328,807.8*** with no inflation, which will be fu
   * Sub-phase 1: Starting at 10,000 from December 7, 2019, daily release will increase for 90 days at a fixed rate of **1.80435%**, until reaching **50,000** on March 6, 2020
   * Sub-phase 2: Starting from March 7, 2020, at a daily decrease rate of **0.189724%**, annual release will decrease by half each year until fully distributed after 8 years.
 
-![](vx-release-schedule.png)
+![](./vx-release-schedule.png)
 
 ### Mining Allocation
 
