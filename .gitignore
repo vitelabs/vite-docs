@@ -5,4 +5,3 @@ node_modules
 .DS_store
 .nuxt
 package-lock.json
-yarn.lock
