@@ -39,7 +39,7 @@ See [Run Local Development Node](./testnode.html) to install your local developm
 
 ### Install Vite.js
 
-Install the latest release of [Vite.js](/vite.js/start.md). Vite.js is the Javascript SDK provided by Vite team. 
+Install the latest release of [Vite.js](/vite.js/). Vite.js is the Javascript SDK provided by Vite team. 
 
 ### Download `solppc`
 

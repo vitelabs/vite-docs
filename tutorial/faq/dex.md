@@ -21,5 +21,5 @@ You can choose either **Bank Account Style Wallet** (based on individual address
 * Exchange checks the [Transaction Confirmations](../../api/rpc/ledger_v2.md#ledger_getaccountblockbyhash) for the withdrawal transaction. When the confirmation number reaches **180**, it is safe to believe the withdrawal is complete.
 
 :::tip
-For convenience, we recommend using [Vite JavaScript SDK](/vite.js/start.md) or [Vite Java SDK](/vitej/start.md) to access the above RPC APIs.
+For convenience, we recommend using [Vite JavaScript SDK](/vite.js/) or [Vite Java SDK](/vitej/) to access the above RPC APIs.
 :::
