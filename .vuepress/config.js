@@ -37,9 +37,9 @@ module.exports = {
         src: path.join(basePath, '/logo.svg'),
       },
       algolia: {
-        id: "BH4D9OD16A",
-        key: "d3bce2a3d5eff7e76467823aae0c647e",
-        index: "vitelabs"
+        id: "G2DPJ8OLAQ",
+        key: "27bf3768169db2b8b16ff4be4ebedf7e",
+        index: "docs-vite"
       },
       topbar: {
         banner: false
