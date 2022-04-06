@@ -1742,8 +1742,8 @@ Return event logs generated in contract response blocks by specified height rang
 - **Parameters**: 
   * `FilterParam`
     * `addressHeightRange`: `map[Address]Range` Query logs of the specified contract account address with given range. At least one address must be specified.
-      * `fromHeight`: `uint64` Start height. `0` means starting from the latest block
-      * `toHeight`: `uint64` End height. `0` means no specific ending block
+      * `fromHeight`: `uint64` Start height. `0` means starting from the latest account block
+      * `toHeight`: `uint64` End height. `0` means no specific ending account block
     * `topics`: `[][]Hash` Prefix of topics
 
 - **Returns**:  
