@@ -7,16 +7,16 @@ order: 4
 ## Use Hummingbot on ViteX
 
 :::tip ViteX API Key
-If you don't have a ViteX API Key, please go to [https://x.vite.net/](https://x.vite.net/tradeOpenapi) to generate one.
+If you don't have a ViteX API Key, please go to [https://x.vite.net/](https://x.vite.net/tradeOpenapi) to generate one. After acquired an API private key, you are advised to authorize delegation of selected trading pairs and pledge enough VITE for quota for the delegation address.
 :::
 
-### Install Hummingbot on Ubuntu
+### Install Hummingbot with Docker
 
-#### Get Docker
+#### Install Docker
 
 ```bash
 # 1) Download Docker install script
-wget https://raw.githubusercontent.com/CoinAlpha/hummingbot/development/installation/install-docker/install-docker-ubuntu.sh
+wget https://raw.githubusercontent.com/hummingbot/hummingbot/master/installation/install-docker/install-docker-ubuntu.sh
 
 # 2) Enable script permissions
 chmod a+x install-docker-ubuntu.sh
@@ -29,9 +29,9 @@ chmod a+x install-docker-ubuntu.sh
 
 ```bash
 # 1. Download Hummingbot create, start, and update scripts
-wget https://gist.githubusercontent.com/soliury/c69e352767b2521ceac83ba6775bd50f/raw/871c260483974179a97087a4146dca0c2197dc60/create.sh
-wget https://gist.githubusercontent.com/soliury/43c0e649b87c7f39550aeb1f3432a835/raw/3ad918df93318d56e9f70e0647b17c87bd32fe0d/start.sh
-wget https://gist.githubusercontent.com/soliury/f0f80ff3bb6b785e169a7cf7b82f4c4e/raw/2d0e1764399ebccad997d870f9c418979f329ddb/update.sh
+wget https://raw.githubusercontent.com/LeonardoBill/hummingbot/vitex-connector-patch-1/installation/docker-commands/create.sh
+wget https://raw.githubusercontent.com/LeonardoBill/hummingbot/vitex-connector-patch-1/installation/docker-commands/start.sh
+wget https://raw.githubusercontent.com/LeonardoBill/hummingbot/vitex-connector-patch-1/installation/docker-commands/update.sh
 
 # 2. Grant permissions
 chmod a+x *.sh
@@ -40,14 +40,45 @@ chmod a+x *.sh
 ./create.sh
 ```
 
-#### Add Hummingbot ViteX Connector
-Visit [Hummingbot ViteX Connector](https://github.com/vitelabs/hummingbot/blob/feat/vitex-connector/documentation/docs/connectors/vitex.md)
-
-#### Start Hummingbot
+#### Start bot
 
 ```bash
 ./start.sh
 ```
+
+### Install Hummingbot from Source
+```bash
+# 1) Install dependencies
+sudo apt-get update
+sudo apt-get install -y build-essential
+
+# 2) Install Miniconda3
+wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
+sh Miniconda3-latest-Linux-x86_64.sh
+
+# 3) Reload .bashrc to register "conda" command
+exec bash
+
+# 4) Clone Hummingbot
+git clone https://github.com/vitelabs/hummingbot.git
+
+git checkout feat/vitex-connector
+
+# 5) Install Hummingbot
+cd hummingbot && ./clean && ./install
+
+# 6) Activate environment and compile code
+conda activate hummingbot && ./compile
+
+# 7) Start Hummingbot
+bin/hummingbot.py
+```
+
+### Connect Hummingbot with ViteX Connector
+
+#### Add Hummingbot ViteX Connector
+Visit [Hummingbot ViteX Connector](https://github.com/vitelabs/hummingbot/blob/feat/vitex-connector/documentation/docs/connectors/vitex.md)
+
 
 #### Configure Hummingbot
 
