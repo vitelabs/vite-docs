@@ -54,6 +54,25 @@ You can automatically generate a `HelloWorld.solpp` contract by using the Solidi
 </div>
 <br><br><br>
 
+:::tip Gvite Version
+Since 0.2.5, it's possible to specify the gvite release version by adding `gviteVersion` in launch.json in your working directory as below.
+
+```json
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "soliditypp",
+            "request": "launch",
+            "name": "Soliditypp Debug",
+            "program": "${file}",
+            "gviteVersion": "v2.12.0-nightly-202204012212"
+        }
+    ]
+}
+```
+:::
+
 ::: warning Compiler Errors
 If the debugger interface doesn't launch, check the debug console and fix any errors:
 
