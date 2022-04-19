@@ -62,10 +62,8 @@ exec bash
 # 4) Clone Hummingbot
 git clone https://github.com/vitelabs/hummingbot.git
 
-git checkout feat/vitex-connector
-
 # 5) Install Hummingbot
-cd hummingbot && ./clean && ./install
+cd hummingbot && git checkout feat/vitex-connector && ./clean && ./install
 
 # 6) Activate environment and compile code
 conda activate hummingbot && ./compile
