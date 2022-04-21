@@ -20,5 +20,3 @@ VITE token holders have a number of votes proportional to their holdings in thei
 ## Token removal
 
 In some scenarios, Vite tokens are "burned" and removed from the system. Here are some examples: the temporary increase of quotas, the issuance of new tokens, the payment of cross-chain transfer fees and the payment for matching of looped transactions, the access to VNS naming services, and so on. The consumption of tokens will reduce Vite’s liquidity, thereby offsetting inflation.
-
-The growth of Vite’s ecosystem and the expansion of its user base will consistently drive the value of the Vite framework, and increase the value of Vite tokens accordingly.
