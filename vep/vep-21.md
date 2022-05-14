@@ -20,4 +20,11 @@ This means any smart contract larger than 6055 bytes cannot be deployed on the n
 
 ## Improvement
 
-We propose to reduce the quota consumption per byte to 16 to allow large contract. In the above case, when $QC_{byte}$ = 16, the maximum allowed compiled code is 60559 bytes, 10x the original size.
+We propose to reduce the quota consumption per byte to 16 to allow large contract. In the above case, when $QC_{byte}$ = 16, the maximum allowed compiled code is **60559** bytes, 10x the original size.
+
+Quota table after update:
+
+* $Qm$ = 1000000
+* $QC_{transaction}$ = 31000
+* $QC_{snapshot}$ = 40
+* $QC_{byte}$ = 16
