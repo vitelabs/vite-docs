@@ -57,6 +57,10 @@ module.exports = {
               {
                 title: "VEP",
                 path: "/vep"
+              },
+              {
+                title: "New Docs (beta)",
+                path: "https://docs.vite.org/vuilder-docs"
               }
             ]
           }
