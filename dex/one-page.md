@@ -2,7 +2,7 @@
 order: 2
 ---
 
-# One Page
+# One Pager
 
 :::tip ViteX
 A fully decentralized exchange built on the Vite blockchain. The world's first DAG-based decentralized exchange. 
