@@ -10,6 +10,8 @@ order: 4
 If you don't have a ViteX API Key, please go to [https://x.vite.net/](https://x.vite.net/tradeOpenapi) to generate one. After acquired an API private key, you are advised to authorize delegation of selected trading pairs and pledge enough VITE for quota for the delegation address.
 :::
 
+The following instructions are for Linux. To install a Linux virtual machine on a Mac or PC, you may use [VirtualBox](https://virtualbox.org).
+
 ### Install Hummingbot with Docker
 
 #### Install Docker
@@ -26,6 +28,7 @@ chmod a+x install-docker-ubuntu.sh
 ```
 
 #### Install Hummingbot
+(In the .sh scripts, to make sure you have the right privilege, you may need to prepend `docker` calls with `sudo`)
 
 ```bash
 # 1. Download Hummingbot create, start, and update scripts
