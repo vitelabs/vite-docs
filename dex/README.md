@@ -21,29 +21,29 @@ See: [VX One Page](./one-page.html)
 
 * **Complete decentralization**
   - On-chain order matching
-  - Smart contract-enabled trading fee collection and dividend distribution 
+  - Smart contract enabled trading fee collection and dividend distribution 
   - Listing a new trading pair only requires 10,000 VITE
 * **Exchange run by the community**
   - Anyone can become a ***ViteX Operator***
   - ViteX Operators have the privilege to set trading fees, suspend trading and list new trading pairs
-  - All Operator functionality are implemented in smart contract
-* **Five means to mine platform token VX**
+  - All features for Operators are implemented in the smart contract
+* **Mine VX in five ways**
 
-## ViteX Coin （VX）
+## ViteX Coin（VX）
 
 ### VX Basics
 
 * **Total Supply**: **29,328,807.8**
 * **Smallest Denomination**: $10^{-18}$
 * **Features**: VX holders receive daily dividends from a shared dividend pool which aggregates the trading fees accumulated by ViteX and redistributes back to VX holders.
-* **Distribution**: VX has no pre-sale. The only way to get VX is through mining, in the following methods:
-  - Trading as mining: Trade in designated BTC, ETH, VITE and USDT markets and receive VX rewards.
-  - Staking as mining: Stake VITE to help ViteX obtain higher level operational quota and receive VX rewards.
-  - Referring as mining: Generate a referral code to invite friends to join the ViteX platform and receive VX rewards. 
-    * Inviter will be rewarded with 5% of all invitees’ trading as mining proceeds and 2.5% of their market making as mining proceeds.
+* **Distribution**: No pre-sale. The following mining methods are the only way to obtain VX:
+  - Trading as Mining: Trade in designated BTC, ETH, VITE and USDT markets and receive VX rewards.
+  - Staking as Mining: Stake VITE to help ViteX obtain higher level operational Quota and receive VX rewards.
+  - Referring as Mining: Generate a referral code to invite friends to join ViteX and receive VX rewards. 
+    * Inviters will be rewarded with 5% of all invitees’ trading as mining proceeds and 2.5% of their market making as mining proceeds.
     * Invitees will enjoy 10% off platform trading fees, and receive an extra 2.5% of trading rewards and extra 1.25% of market-making rewards.
-  - Market-making as mining: Help improve order book depth by placing buy and sell orders and receive VX rewards.
-  - Listing as mining: Become a ViteX operator and list trading pairs to collect user transactions fees and receive VX rewards.
+  - Market-Making as Mining: Help improve order book depth by placing buy and sell orders and receive VX rewards.
+  - Listing as Mining: Become a ViteX operator and list trading pairs to collect user transactions fees and receive VX rewards.
 * **Release Schedule**: All VX will be released over the course of 8 years and 3 months. 
   
 ### VX Distribution Schedule
@@ -63,7 +63,7 @@ The total supply of VX is ***29,328,807.8*** with no inflation, which will be fu
 
 The release of VX will be allocated daily as the breakdown below:
 
-* Trading, Referring and Listing: ***55%***
+* Trading, referring and listing: ***55%***
   - BTC market: ***13.75%***
   - ETH market: ***13.75%***
   - VITE market: ***13.75%***
@@ -74,7 +74,7 @@ The release of VX will be allocated daily as the breakdown below:
 
 ### VX Holder Dividends
 
-All trading fees charged by the ViteX platform will be put into a shared dividend pool and distributed at a rate of **1%** daily. For any given day, the fees collected of the day will be distributed completely in the next 100 days.
+All trading fees charged by ViteX will be put into a shared dividend pool and distributed at a daily rate of **1%**. For any given day, the fees collected of the day will be distributed completely in the next 100 days.
 
 To receive your dividends:
 * A minimum of **10 VX** must be staked in the exchange account. Please note that VX held in a wallet or exchange account will not make you eligible for dividends;
@@ -83,73 +83,73 @@ To receive your dividends:
 Users can enable automatic staking. Mined VX will be automatically staked once enabled, purchased VX is not subject to this function.
 
 :::tip Attention
-Trading fees charged by operator (Operator Fee) are excluded from dividends. 
+Trading fees charged by Operator (Operator Fee) are excluded from dividends. 
 
-Starting from December 8, 2019, base fee collected in **VITE** are not sent to dividend pool but will be destroyed. The cumulative VITE in the dividend pool were destroyed too. 
+Starting from December 8, 2019, base fees collected in **VITE** are not sent to the dividend pool but will be destroyed. The cumulative VITE in the dividend pool were destroyed as well. 
 :::
 
 ## Mining Details
 
 ### Trading as Mining
 
-Mines approximately 55% of daily released VX. Currently, users are able to trade in four markets: BTC, ETH, VITE and USDT and receive VX rewards accordingly.
+Mines approximately 55% of daily released VX. Currently, users are able to trade in four markets to receive VX rewards accordingly: BTC, ETH, VITE and USDT.
 
 * **Allocation**: Each market receives 13.75% of daily distributed VX. 
-* **How to participate**: By fulfilling orders on **eligible trading pairs**, you mined VX. 
-* **Mining calculation**: The calculation is based on the proportion of your cumulative trading fee to the total trading fees collected in the associated market. For example, for a given day, if a trader contributed 5% of the total trading fee of BTC market, the trader will receive 5% of the 15% of VX applied to the market. 
+* **How to participate**: Fulfill orders on **eligible trading pairs**.
+* **Mining calculation**: The calculation is based on the proportion of your cumulative trading fees to the total trading fees collected in the associated market. For example, if a trader contributed 5% of the total trading fee of BTC market on the day, the trader will receive 5% of the 15% of VX applied to the market. 
     
 ### Staking as Mining
 
-By staking VITE to help ViteX obtain operational quota, users receive VX rewards.
+By staking VITE to help ViteX obtain operational Quota and receive VX rewards.
 
 * **Allocation**: 20% of daily released VX
-* **How to participate**: Stake VITE in ViteX exchange.
+* **How to participate**: Stake VITE on ViteX.
   - **Staking amount**: The minimum amount is 134 VITE. No maximum cap.
-  - **Staking duration**: Stakes can be retrieved after 3 days. There is no maximum number of days for staking VITE. There will be a retrieving period of 7 days, and stakes will not be counted towards staking as mining rewards during this period.
-* **Mining calculation** : The calculation is based on the proportion of VITE staked by you to the total staking amount. 
+  - **Staking duration**: Staked VITE can be retrieved after 3 days. There is no maximum number of days for staking VITE but a retrieving period of 7 days, and the staked VITE will not be counted towards staking as mining rewards during this period.
+* **Mining calculation** : The calculation is based on the proportion of your staked VITE to the total staking amount on ViteX. 
   
-### Market-making as Mining
+### Market-Making as Mining
 
 Mines 15% of daily released VX; BTC market at 7.5%, ETH and VITE market equally at 2.25%, USDT market at 3%.
 
-Placing orders on ViteX can also earn VX. The amount of VX earned depends on three factors: 1) the amount of order, 2) the amount of time your order remains on the order book, and 3) the amount of deviation from the best bid and best offer in the order book spread.
+Placing orders on ViteX can help you earn VX. The amount of VX earned depends on three factors: 1) the amount of order, 2) the amount of time your order remains on the order book, and 3) the amount of deviation from the best bid and best offer in the order book spread.
 
 * **Allocation**: 15% of daily released VX
   - BTC market **7.5%**
   - ETH market **2.25%**
   - VITE market **2.25%**
   - USDT market **3%**
-* **How to participate**: Place orders in the order book
-  - Only eligible trading pairs will be considered for market-making as mining;
-  - Both buy and sell orders are considered for market-making as mining rewards;
+* **How to participate**: Place orders on ViteX order book.
+  - Only eligible trading pairs will be considered;
+  - Both buy and sell orders are considered;
   - Orders must not deviate from the designated mining range in the order book.
 
 > The VX mining reward for market-making has a linear relationship with the **order amount** and **order duration** (i.e. amount of time the pending order stays on the order book). 
 However, the mining reward has an exponential relationship with the **order distance** (i.e. the deviation from the best bid offer). 
-> For example, if Alice and Bob both place two separate orders for the same amount of token X. Both orders remain on the order book for the same amount of time. However, Alice prices her order at distance of 1% (i.e., very close to the best bid offer) and Bob prices his order at distance of 10% (i.e. further away from the best bid offer), the mining reward for Alice will be 63 times that of Bob's. This system is designed to incentive users to place orders as close to the best bid offer as possible.
+> For example, if Alice and Bob both placed two separate orders for the same amount of token X. Both orders remain on the order book for the same amount of time. However, Alice prices her order at distance of 1% (i.e., very close to the best bid offer) and Bob prices his order at distance of 10% (i.e. further away from the best bid offer), the mining reward for Alice will be 63 times that of Bob's. This system is designed to incentive users to place orders as close to the best bid offer as possible.
 
 * **Mining calculation**:
-  * **Mining interval** ($M_{INT}$) and **mining threshold** ($TH$): Buy orders that are set within mining threshold from the best buy offer in the order book will be considered for mining rewards. For most of trading pairs the mining threshold is **10%**, however, different mining thresholds are also allowed. For threshold table please refer to: [Mining Thresholds](./mining-threshold.html).
+  * **Mining interval** ($M_{INT}$) and **mining threshold** ($TH$): Buy orders that are set within mining threshold from the best buy offer in the order book will be considered for mining rewards. For most trading pairs, the mining threshold is **10%**, However, different mining thresholds are also allowed. For threshold table please refer to: [Mining Thresholds](./mining-threshold.html).
       
     $TH = 10\%$
       
     $M_{INT} = [{Best Buy Order} * (1-TH), {Best Buy Order})$
           
-  * **Buy cap** ($B_{max}$): The maximum ratio of VX eligible being mined by one buy order to best sell order. The value varies among different markets.
+  * **Buy Cap** ($B_{max}$): The maximum ratio of VX eligible being mined by one buy order to best sell order. The value varies among different markets.
   
-  * **Sell cap** ($S_{max}$): The maximum ratio of VX eligible being mined by one sell order to best buy order. The value varies among different markets.
+  * **Sell Cap** ($S_{max}$): The maximum ratio of VX eligible being mined by one sell order to best buy order. The value varies among different markets.
   
-  * **Order duration** ($T$): A buy order must stay pending on the **mining level** for at least **300** seconds. Orders placed for less than **300** seconds will not be considered for the mining reward.
+  * **Order Duration** ($T$): A buy order must stay pending on the **mining level** for at least **300** seconds. Orders placed for less than **300** seconds will not be considered for the mining reward.
 
-  * **Total amount of buy orders** ($A_{buy}$): The sum of unfilled amount of all buy orders in the **mining interval** for one trading pair
+  * **Total Amount of Buy Orders** ($A_{buy}$): The sum of unfilled amount of all buy orders in the **mining interval** for one trading pair
 
-  * **Total amount of sell orders** ($A_{sell}$): The sum of unfilled amount of all sell orders in the **mining interval** for one trading pair
+  * **Total Amount of Sell Orders** ($A_{sell}$): The sum of unfilled amount of all sell orders in the **mining interval** for one trading pair
     
-  * **Actual pending order amount** ($\beta$): The unfilled amount of a user's pending order within a certain time range
+  * **Actual Pending Order Amount** ($\beta$): The unfilled amount of a user's pending order within a certain time range
 
-  * **Valid pending order amount** ($a$): The unfilled amount of a user's pending order within a certain time range **valid** for mining VX. The value is related to $B_{max}$, $S_{max}$, $A_{buy}$ and $A_{sell}$.
+  * **Valid Pending Order Amount** ($a$): The unfilled amount of a user's pending order within a certain time range **valid** for mining VX. The value is related to $B_{max}$, $S_{max}$, $A_{buy}$ and $A_{sell}$.
 
-  ***If the order is a buy order***:
+  ***Buy Order***:
 
     * If $A_{sell}$ > $A_{buy}$, $a= \beta$
 
@@ -159,7 +159,7 @@ However, the mining reward has an exponential relationship with the **order dist
 
       * When $B_{max} >= \frac{A_{buy}}{A_{sell}}$, $a = \beta$
 
-  ***If the order is a sell order***:
+  ***Sell Order***:
 
     * If $A_{sell}$ > $A_{buy}$
 
@@ -169,13 +169,13 @@ However, the mining reward has an exponential relationship with the **order dist
 
     * If $A_{sell}$ <= $A_{buy}$, $a= \beta$
         
-  * **Order distance** ($d$): The amount of deviation from the user's buy order to the best buy offer. 
+  * **Order Distance** ($d$): The amount of deviation from the user's buy order to the best buy offer. 
     
       $d = \frac {Best Buy Order - User Order} {Best Buy Order}$
       
       If the percentage deviation is greater than **threshold** ($TH$), the order will not be considered for mining rewards. If the deviation is less than **threshold** ($TH$), the g value will be: 
             
-    * **Unchanged order time** ($t$): refers to the amount of time a buy order sits in the order book with a set **amount** ($a$) at a given **distance** ($d$). This value is different from the **order duration** ($T$) mentioned above. The latter is the cumulative time of the pending order. 
+    * **Unchanged Order Time** ($t$): refers to the amount of time a buy order sits in the order book with a set **amount** ($a$) at a given **distance** ($d$). This value is different from the **order duration** ($T$) mentioned above. The latter is the cumulative time of the pending order. 
             
       $T = t_1 + t_2 + t_3 + ... + t_n$
       
@@ -191,7 +191,7 @@ However, the mining reward has an exponential relationship with the **order dist
         
       Following this, the order duration, T, would be $T = t_1 + t_2 = 60 + 240 = 300 
       
-    * **Market-making points** ($m$): this variable is calculated using **unchanged order time** ($t$), **pending order amount** ($a$) and **order distance** ($d$)
+    * **Market-Making Points** ($m$): this variable is calculated using **unchanged order time** ($t$), **pending order amount** ($a$) and **order distance** ($d$)
     
       $m = t * a * 0.6^{1+\frac{9}{TH} * d} \ | \ \{0 < d <= TH\}$
       
@@ -224,32 +224,32 @@ However, the mining reward has an exponential relationship with the **order dist
   
 ### Referring as Mining
 
-User can request invitation codes to invite friends to join the ViteX platform.
+Invite your friends to join ViteX and earn VX rewards.
 
 * **Invitees** will enjoy
   - **10%** off trading fees;
   - **2.5%** of trading rewards in addition;
   - **1.25%** of market-making rewards in addition.
     
-* **Inviter** will be rewarded with
+* **Inviters** will be rewarded with
   - **5%** of all invitees’ trading as mining proceeds;
   - **2.5%** of their market making as mining proceeds.
   
 * **How to participate**:
   - Spend 100 VITE to generate a referral code, of which 100% will be burned
   
-> As an example, let’s say Bob gets a referral code from Alice. When Bob signs up ViteX using the code and starts trading, he gets 10% off of all trading fees (Base Trading Fee + any applicable Operator Fees) on ViteX. Alice, on the other hand, benefits from Bob’s trading activity as 5% of Bob’s cumulative trading fees count for Alice’s cumulative trading fees. For example, if Bob accrues $100 in trading fees and Alice accrues $200, Alice will effectively have $205 in accumulated trading fees while Bob will have $102.5 as he is rewarded with additional 2.5% of his own trading fees.
+> As an example, let’s say Bob gets a referral code from Alice. When Bob signs up on ViteX using the code and starts trading, he gets 10% off of all trading fees (Base Trading Fee + any applicable Operator Fees) on ViteX. Alice, on the other hand, benefits from Bob’s trading activity as 5% of Bob’s cumulative trading fees count for Alice’s cumulative trading fees. For example, if Bob accrues $100 in trading fees and Alice accrues $200, Alice will effectively have $205 in accumulated trading fees while Bob will have $102.5 as he is rewarded with additional 2.5% of his own trading fees.
 
 :::tip Attention
-If you are a ViteX VIP user (who staked 10,000 VITE to obtain 50% reduction in trading fees) and accepted a referral code, your 10% discount will be applied after the reduction.
+If you are a ViteX VIP (who staked 10,000 VITE to obtain 50% off trading fees) and accepted a referral code, your 10% discount will be applied after the reduction.
 :::  
     
 ### Listing as Mining
 
 ViteX Operators can list trading pairs, customize trading fees, and generate profits from users that choose to trade on their Zone.  
-For each trading pair listed, the VX reward is then calculated as if a trade involving a trading fee of 1,000 VITE was executed.
+The VX reward for each trading pair listed is calculated as if a trade with a trading fee of 1,000 VITE was executed.
 
-> For example, Alice is an operator and listed a trading pair. Her listing reward is calculated as follows:
+> For example, Alice is an Operator and listed a trading pair. Her listing reward is calculated as follows:
 
   $$\frac {1000} {Total Trading Fees(VITE \ Market)} * 15\% * {Daily Released VX}$$
   
@@ -262,12 +262,12 @@ For all trades on ViteX, incomplete orders do not incur any trading fees.
 ***Total Trading Fee = Base Trading Fee + Operator Fee***
 
 :::tip Free Order Placement and Cancellation
-Unlike other decentralized exchange, ViteX does not charge fees for order placement or cancellation. However, the user must have sufficient quota to perform the operation. Related link: [What is quota](../reference/quota.md). 
+Unlike other decentralized exchanges, ViteX does not charge fees for order placement or cancellation. However, the user must have sufficient Quota to perform the operation. Related link: [What is Quota](../reference/quota.md). 
 :::
 
 **Base Trading Fee**: ***0.2%***
 
-Base trading fee applies to all trading pairs in ViteX. All base trading fees are put into the dividend pool for further distribution to VX holders. 
+Base trading fee applies to all trading pairs on ViteX. All base trading fees are put into the dividend pool for further distribution to VX holders. 
 
 **Operator Fee**: ***0 - 0.2%***
 
@@ -286,23 +286,23 @@ Minimum Staking Duration: **30 days**
 
 * Use a Referral Code and receive 10% off trading fees.
 
-:::tip VIP Uses Referral Code
-For any VIP user using a referral code, another 10% will be taken off incurred trading fees after the 50% reduction.
-For example, Alice is a VIP and uses a referral code, the token pair she trades on has a 0.15% Operator Fee, the final trading fee she receives is: $((0.2\% - 0.1\%) + 0.05\%)*90\% = 0.135\%$.
+:::tip VIP Referral Code
+For any VIP using a referral code, another 10% will be taken off incurred trading fees after the 50% reduction.
+For example, Alice is a VIP and uses a referral code, the token pair she trades on has a 0.15% operator fee, the final trading fee she receives is: $((0.2\% - 0.1\%) + 0.05\%)*90\% = 0.135\%$.
 :::
 
 ## ViteX Operator Guide
 
-ViteX adheres to the principles of openness and transparency. As such, ViteX allows anyone to operate their own decentralized exchanges, called Zones, on ViteX. Within their respective Zones, Operators can list trading pairs, customize trading fees, and generate profits from users that choose to trade on their Zone.
+ViteX adheres to the principles of openness and transparency. As such, ViteX allows anyone to operate their own decentralized exchanges called Zones on ViteX. Within their respective Zones, Operators can list trading pairs, customize trading fees, and generate profits from users that choose to trade on their Zone.
 
 ### Token Issuer
 
-An Issuer is classified as anyone who issues a token on the Vite platform. By default, the rights to list a token trading pair belongs to the Issuer. However, the Issuer can transfer rights to their token to other entities (such as an Operator). 
+An Issuer is classified as anyone who issues a token on the Vite network. By default, the rights to list a token trading pair belongs to the Issuer. However, the Issuer can transfer rights to their token to other entities (such as an Operator). 
 
-For example, Alice issues Token A on the Vite chain. As the Issuer, Alice has the rights to Token A. If Bob wants to list a Token A / BTC trading pair, he will need Alice to first transfer the rights to Token A before he can list. 
+For example, Alice issues Token A on the Vite chain. As the Issuer, Alice has the rights to Token A. If Bob wants to list a Token A / BTC trading pair, he would need Alice to first transfer the rights to Token A before he can list. 
 
 :::tip Token Issuance Fee
-The token issuance fee on the Vite chain is 1,000 VITE, which are immediately destroyed.
+The token issuance fee on the Vite chain is 1,000 VITE which are immediately destroyed.
 :::
 
 ### ViteX Operator
@@ -313,7 +313,7 @@ Per the example above, if Alice decides to transfer the rights to Token A and al
 
 #### Operator Zone
 
-If an Operator lists several trading pairs, collectively they are considered to be a Zone. The Zone run by an Operator can be thought as a business operation. As such, off-chain, Operators are responsible for promoting and marketing their respective Zones to attract more users and promote their business.
+If an Operator lists several trading pairs, collectively they are considered to be a Zone. The Zone run by an Operator can be thought as a business operation. As such, Operators are responsible for promoting and marketing their respective Zones to attract more users and promote their business.
 
 ### ViteX Operator Rights
 
@@ -327,7 +327,7 @@ Only the token owner can list trading pairs involving the token he or she owns.
 At present, only **BTC, ETH, USDT or VITE** trading pairs can be listed. Attempting to open trading pairs to other cryptocurrencies will be rejected.
 
 :::tip Cost of Trading Pair Opening
-A cost of 10,000 VITE is charged to open a trading pair. The 10,000 VITE will be immediately destroyed. 
+A cost of 10,000 VITE is charged to open a trading pair, which will be immediately destroyed. 
 :::
 
 * **Transferring Token Ownership**
@@ -346,20 +346,20 @@ Operators have the right to set an additional trading fee (Operator Fee, on top 
 
 * **Trade Suspension**
 
-The Operator reserve the right to suspend a trading pair. After they do so, the user cannot place orders involving the given trading pair but can withdraw the order if they already had one in place. 
+Operators reserve the right to suspend a trading pair. After they do so, the user cannot place orders involving the given trading pair but can withdraw the order if they already had one in place. 
 
 * **Transferring Token Operating Right**
 
-Token operating right can be transferred. The new owner will become the Operator of the trading pair. This operation is irreversible. 
+Token operating right can be transferred. The new owner will become the Operator of the trading pair. This action is irreversible. 
 
 :::warning Attention
 
 The **token ownership right** and **token operating right** are two independent sets of rights. 
 
 For example, Alice is the Issuer of Token A, so by default, she has the token ownership right to Token A. At the moment, only Alice can open trading pairs involving Token A.
-Now, Alice decides to open a trading pair: Token A / BTC. Now, she has two"sets" of rights: 1) Ownership of Token A and 2) Token A / BTC Operating.
+Now, Alice decides to open a trading pair: Token A / BTC. Now, she has two "sets" of rights: 1) Ownership of Token A and 2) Token A / BTC Operating.
 
-If Alice transfer the right of Token A / BTC to Bob, Alice now no longer has the right to Token A / BTC pair. The transfer of trading rights to Bob is irreversible. However, since Alice still has the token A ownership rights, she decides to open another trading pair of Token A / ETH.
+If Alice transfers the right of Token A / BTC to Bob, Alice now no longer has the right to Token A / BTC pair. The transfer of trading rights to Bob is irreversible. However, since Alice still has the token A ownership rights, she decides to open another trading pair of Token A / ETH.
 Now, if Alice decides to transfer the Token A Ownership right to Charles, she permanently loses that right and can no longer open any additional trading pairs involving Token A. However, Alice still owns the Token A / ETH trading pair despite no longer having the Token A Ownership rights.
 
 :::
