@@ -14,7 +14,7 @@ parent:
 
 VX holders can receive daily **ViteX Dividends** from a shared dividend pool which aggregates all trading fees accumulated by ViteX and redistributes back to VX holders.
 
-See: [VX One Page](./one-page.html)
+See: [VX One Pager](./one-page.html)
 :::
 
 ## Highlights
