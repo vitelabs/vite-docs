@@ -19,15 +19,15 @@ See: [VX One Page](./one-page.html)
 
 ## Highlights
 
-* **Complete decentralization**
+* **Features**
   - On-chain order matching
   - Smart contract enabled trading fee collection and dividend distribution 
   - Listing a new trading pair only requires 10,000 VITE
-* **Exchange run by the community**
+* **Truly Decentralized**
   - Anyone can become a ***ViteX Operator***
   - ViteX Operators have the privilege to set trading fees, suspend trading and list new trading pairs
   - All features for Operators are implemented in the smart contract
-* **Mine VX in five ways**
+* **Five Ways to Mine VX**
 
 ## ViteX Coin（VX）
 
