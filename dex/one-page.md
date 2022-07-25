@@ -29,5 +29,5 @@ Built on Vite, a zero gas and lightning fast blockchain, ViteX is a high perform
 
 * **Trustless Cross-Chain:**
 * Staying true to a decentralized exchange, ViteX allows anyone to become an Operator in a permissionless manner, and users can create any token pair minted on the Vite chain, making it the perfect platform of liquidity for Vite ecosystem projects. 
-* Vite Labs is developing ViteBridge to bring more asset security to trustless cross-chain trading, ViteBridge is deployed on BSC testnet and three more bridges are coming by the end of 2022. More details:[ViteBridge](./ViteBridge.html)
+* Vite Labs is developing ViteBridge to bring more asset security to trustless cross-chain trading, ViteBridge is deployed on BSC testnet and three more bridges are coming by the end of 2022. 
 
