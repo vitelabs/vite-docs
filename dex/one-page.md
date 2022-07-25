@@ -14,7 +14,7 @@ Built on Vite, a zero gas and lightning fast blockchain, ViteX is a high perform
   * Eligible to earn daily dividends. 100% ViteX fee income is distributed to VX holders.
   * Eligible to vote in ViteX governance.
 * **Total Supply (No Inflation)**: ***29,328,807.8*** 
-* **Distribution**：VX, the native token to ViteX, had no presale or private sale, it can only be bought on exchanges or earned in the five following ways:
+* **Distribution**: VX, the native token to ViteX, had no presale or private sale, it can only be bought on exchanges or earned in the five following ways:
   * **Trading as Mining**: Trade in designated BTC, ETH, VITE and USDT markets and receive VX rewards.
   * **Staking as Mining**: Stake VITE to help ViteX obtain higher level operational Quota and receive VX rewards.
   * **Referring as Mining**: Generate a referral code to invite friends to join ViteX and get VX rewards.
