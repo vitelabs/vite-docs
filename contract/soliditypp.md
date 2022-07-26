@@ -107,7 +107,7 @@ The execution is NOT in a single transaction, instead, there are multiple transa
 
 * When the client invokes `B.inc()`, a request transaction *S1(C->B)* (from the client to B) is initiated.
 * Vite is listening all open request transactions to the address of contract B. Once *S1* is discovered, Vite VM is activated and the code of `B.inc()` is executed. A response transaction *R1(S1)* (linked to *S1*) will be initiated after the execution.
-* When the `contractA.get()` statement is executed, a new request transaction *S2(B->A)* (from B to A) is triggered and merged to *R1*. ([VEP-7: Merge In-Contract Request Calls into Original Response as one Transaction](https://docs.vite.org/go-vite/vep/vep-7.html))
+* When the `contractA.get()` statement is executed, a new request transaction *S2(B->A)* (from B to A) is triggered and merged to *R1*. ([VEP-7: Merge In-Contract Request Calls into Original Response as one Transaction](https://docs.vite.org/vite-docs/vep/vep-7.html))
 * When *S2* is accepted by contract A, the code of `A.get()` is executed and a response transaction *R2(S2)* (linked to *S2*) will be initiated after the execution.
 * When the `sender.callback(data)` statement is executed, a new request transaction *S3(A->B)* (from A to B) is triggered to send the result back to B. (*S3* will be merged to *R2*).
 * When *S3* is accepted by contract B, the code of `B.callback()` is executed. A can get the latest value of `B.data` from the parameter `result` of the function `callback`. After the execution, a response transaction *R3(S3)* (linked to *S3*) will be initiated.
