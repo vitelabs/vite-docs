@@ -44,8 +44,8 @@ wscat -c wss://api.vitex.net/v2/ws
 ```
 
 ## Commands and Events  
-* **sub**: subscribe a topic
-* **un_sub**: un-subscribe a topic
+* **sub**: subscribe to a topic
+* **un_sub**: un-subscribe from a topic
 * **ping**: keep-alive heartbeat message
 * **pong**: keep-alive heartbeat acknowledgement
 * **push**: data pushed to the client
@@ -69,7 +69,7 @@ wscat -c wss://api.vitex.net/v2/ws
 :::
 
 :::tip Important
-To keep session alive, `ping` heartbeat messages should be sent in every 10 seconds, at most no longer than 1 minute. When heartbeats are sent longer than 1 minute, the client is no more regarded as alive and registered subscriptions will be cleaned up.
+To keep sessions alive, `ping` heartbeat messages should be sent every 10 seconds and no longer than 1 minute at most. When heartbeats are sent later than 1 minute, the client is not regarded as alive anymore and registered subscriptions will be cleaned up.
 :::
 
 ## Subscribe
@@ -104,19 +104,19 @@ To keep session alive, `ping` heartbeat messages should be sent in every 10 seco
 |`market.quoteTokenCategory.ETH.tickers`|Quote token category statistics update|`TickerStatistics`|
 |`market.quoteTokenCategory.USDT.tickers`|Quote token category statistics update|`TickerStatistics`|
 |`market.quoteTokenCategory.BTC.tickers`|Quote token category statistics update|`TickerStatistics`|
-|`market.$symbol.kline.minute`|1-minute kline update|`Kline`|
-|`market.$symbol.kline.minute30`|30-minute kline update|`Kline`|
-|`market.$symbol.kline.hour`|1-hour kline update|`Kline`|
-|`market.$symbol.kline.day`|1-day kline update|`Kline`|
-|`market.$symbol.kline.week`|1-week kline update|`Kline`|
-|`market.$symbol.kline.hour6`|6-hour kline update|`Kline`|
-|`market.$symbol.kline.hour12`|12-hour kline update|`Kline`|
+|`market.$symbol.kline.minute`|1-minute candlestick chart (aka kline) update|`Kline`|
+|`market.$symbol.kline.minute30`|30-minute candlestick chart (aka kline) update|`Kline`|
+|`market.$symbol.kline.hour`|1-hour candlestick chart (aka kline) update|`Kline`|
+|`market.$symbol.kline.day`|1-day candlestick chart (aka kline) update|`Kline`|
+|`market.$symbol.kline.week`|1-week candlestick chart (aka kline) update|`Kline`|
+|`market.$symbol.kline.hour6`|6-hour candlestick chart (aka kline) update|`Kline`|
+|`market.$symbol.kline.hour12`|12-hour candlestick chart (aka kline) update|`Kline`|
 
 ### Push Message Definitions
 
-Push messages will be sent to the client continually after successsfully subscribing a topic.
+Push messages will be sent to the client continually after successsfully subscribing to a topic.
 
-#### Push messages pattern
+#### Push Message Pattern
 ```json tab:Response
   {
     "code": 0,  // error code
@@ -291,7 +291,7 @@ private Long bh;
   ```
   :::
 
-#### TickerStatistics
+#### Ticker Statistics
 
 * **Definition:**
 ```java
@@ -367,7 +367,7 @@ private Integer qp;
   ```
   :::
 
-#### KLine/Candlestick bars
+#### Candlestick Chart (aka Kline)
 
 * **Definition:**
 ```java
