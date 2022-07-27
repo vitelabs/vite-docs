@@ -5,10 +5,10 @@ order: 2
 # ViteX Gateway Protocol
 
 :::tip Introduction
-This specification describes the API interface that a third-party ViteX gateway need to implement for integrating into ViteX. 
-It has been fully supported by [Vite Web Wallet](https://github.com/vitelabs/vite-web-wallet) and Vite Mobile App.
+This specification describes the API that a third-party ViteX Gateway need in order to implement integration into ViteX. 
+It is fully supported by [Vite Web Wallet](https://github.com/vitelabs/vite-web-wallet) and Vite Mobile App.
 
-For how to integrate the gateway in the wallet, please see [Gateway Integration Guide](integration-guide.md)
+For how to integrate the Gateway in the wallet, please see [Gateway Integration Guide](integration-guide.md)
 :::
 
 :::warning Attention
@@ -20,7 +20,7 @@ For how to integrate the gateway in the wallet, please see [Gateway Integration 
 ## Request
 
 ### header
-The following parameter(s) are appended in request header from Vite web wallet
+The following parameters are appended in request header from Vite web wallet
   |Name|Description|
   |:--|:--|
   |lang|The wallet will pass the current locale, and the gateway should handle it to provide i18n support.<br>`zh-cn`(Chinese simplified) and `en`(English) are currently supported in the wallet.|
@@ -29,10 +29,10 @@ The following parameter(s) are appended in request header from Vite web wallet
 ## Response
 
 ### header
-The following parameter(s) should be appended in response header from gateway
+The following parameter should be appended in response header from Gateway
   |Name|Description|
   |:--|:--|
-  |version|The spec version number(s) currently supported by the gateway, split by `,`|
+  |version|The spec version number(s) currently supported by the Gateway, split by `,`|
   
 ### body
 ```javascript
@@ -47,7 +47,7 @@ The following parameter(s) should be appended in response header from gateway
 
 ### `/meta-info`
 
-Get gateway information by token id
+Get Gateway information by token id
 
 * **Method**: `GET`
 
@@ -66,10 +66,10 @@ Get gateway information by token id
   |withdrawState|Withdrawal channel state. Allowed value: `OPEN`, `MAINTAIN`, `CLOSED`|string|true|
 
 :::tip Binding Types
-The web wallet needs use binding types to render different deposit/withdrawal UI(s) and build different requests, while the gateway needs use it to return different responses. 
-At the time being the following two types have been defined:
-* `0` Independent address mode: In this mode, the gateway will bind a separate inbound address to each user's Vite address. Examples of this type are BTC and ETH<br>
-* `1` Bind-by-comment mode: In this mode, the gateway cannot bind separate inbound address to each user's Vite address, so that it is necessary to identify the user's VITE address with additional comment. Examples of this type are EOS and XMR
+The web wallet needs to use binding types to render different deposit/withdrawal UI(s) and build different requests, while the gateway needs to use it to return different responses. 
+Currently, the following two types have been defined:
+* `0` Independent address mode: In this mode, the Gateway will bind a separate inbound address to each user's Vite address. Examples of this type are BTC and ETH<br>
+* `1` Bind-by-comment mode: In this mode, the Gateway cannot bind separate inbound address to each user's Vite address, so that it is necessary to identify the user's VITE address with additional comment. Examples of this type are EOS and XMR
 :::
 
 * **Example**
@@ -92,7 +92,7 @@ At the time being the following two types have been defined:
     }
     ```
 
-## Deposit/withdrawal API
+## Deposit/Withdrawal API
 
 ### `/deposit-info`
 
@@ -170,10 +170,10 @@ The gateway should bind user's Vite address to a source chain address, and the w
   ::::
 
 :::tip Deposit Process
-1. The gateway establishes the binding relationship between the **user's VITE address** and the **source chain deposit address**.
-2. The gateway listens to the source chain transactions on the deposit address and waits for necessary confirmations.
-3. After the gateway confirms the deposit transaction on the source chain, it initiates a transfer transaction to send the same amount of gateway tokens to user's Vite address on Vite chain.
-4. The gateway listens to the transfer transaction on Vite, and must resend the transaction in case it doesn't get confirmed.
+1. The Gateway establishes the binding relationship between the **user's VITE address** and the **source chain deposit address**.
+2. The Gateway listens to the source chain transactions on the deposit address and waits for necessary confirmations.
+3. After the Gateway confirms the deposit transaction on the source chain, it initiates a transfer transaction to send the same amount of Gateway Tokens to user's Vite address on Vite chain.
+4. The Gateway listens to the transfer transaction on Vite, and must resend the transaction in case it doesn't get confirmed.
 :::
 
 ### `/withdraw-info`
@@ -196,9 +196,9 @@ Get withdrawal information by token id and user's Vite address. The web wallet w
   |:--|:---|:---:|:---:|
   |minimumWithdrawAmount|Minimum withdrawal amount|string|true|
   |maximumWithdrawAmount|Maximum withdrawal amount|string|true|
-  |gatewayAddress|Gateway address on Vite chain. The web wallet will send an amount of gateway tokens to the address for withdrawal|string|true|
+  |gatewayAddress|Gateway address on Vite chain. The web wallet will send an amount of Gateway Tokens to the address for withdrawal|string|true|
   |labelName|Label name, required if type=1|string|false|
-  |noticeMsg|Extra message filled in by gateway|string|false|
+  |noticeMsg|Extra message filled in by Gateway|string|false|
 
 * **Example**
 
@@ -223,7 +223,7 @@ Get withdrawal information by token id and user's Vite address. The web wallet w
 
 ### `/withdraw-address/verification`
 
-Verify withdrawal address. The web wallet will use this API to verify the source chain withdrawal address
+Verify withdrawal address. The web wallet will use this API to verify the source chain withdrawal address.
 
 * **Method**: `GET`
 
@@ -264,7 +264,7 @@ Verify withdrawal address. The web wallet will use this API to verify the source
 
 ### `/withdraw-fee`
 
-Get gateway withdrawal fee
+Get gateway withdrawal fee.
 
 * **Method**: `GET`
 
@@ -275,7 +275,7 @@ Get gateway withdrawal fee
   |tokenId|Gateway token id|string|true|
   |walletAddress|User's Vite address|string|true|
   |amount|Withdrawal amount|string|true|
-  |containsFee|Is the fee included in the original withdrawal amount?<br>If this is false, then `amount` refers to actual amount transferred. The gateway will calculate the transaction fee based on this amount.<br>If this is true, then `amount` refers to the sum of actual amount transferred and the transaction fee. The gateway will subsequently derive the actual amount transferred and the transaction fee. Usually this is used in a full withdrawal.|bool|true|
+  |containsFee|Is the fee included in the original withdrawal amount?<br>If this is false, then `amount` refers to actual amount transferred. The Gateway will calculate the transaction fee based on this amount.<br>If this is true, then `amount` refers to the sum of actual amount transferred and the transaction fee. The Gateway will subsequently derive the actual amount transferred and the transaction fee. Usually this is used in a full withdrawal.|bool|true|
 
 
   
@@ -305,9 +305,9 @@ Get gateway withdrawal fee
   
 :::tip Withdrawal Process
 1. The user fills in a valid withdrawal amount and source chain withdrawal address, then hits the transfer button. At this time, the web wallet will send a corresponding amount of gateway tokens to the gateway address on Vite chain. The source chain withdrawal address is stored in the comment of the transaction.
-2. The gateway listens for the transactions on the withdrawal address and waits for necessary confirmations.
-3. After the gateway confirms the withdrawal transaction on Vite chain, it initiates a transfer transaction to send the same amount of the source chain tokens to user's withdrawal address on the source chain.
-4. The gateway listens for the transfer transaction on the source chain, and must resend the transaction in case it doesn't get confirmed.
+2. The Gateway listens for the transactions on the withdrawal address and waits for necessary confirmations.
+3. After the Gateway confirms the withdrawal transaction on Vite chain, it initiates a transaction to send the same amount of the source chain tokens to user's withdrawal address on the source chain.
+4. The Gateway listens for the transaction on the source chain, and must resend the transaction in case it doesn't get confirmed.
 :::
 
 #### Gateway Transaction Comment
@@ -350,7 +350,7 @@ For gateway transactions, **VEP-8 Type** is fixed at `3011`, or `0x0bc3` in hexa
 
 ### `/deposit-records`
 
-Get historical deposit records
+Get historical deposit records.
 
 * **Method**: `GET`
 
