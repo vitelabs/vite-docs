@@ -23,7 +23,7 @@ For how to integrate the Gateway in the wallet, please see [Gateway Integration 
 The following parameters are appended in request header from Vite web wallet
   |Name|Description|
   |:--|:--|
-  |lang|The wallet will pass the current locale, and the gateway should handle it to provide i18n support.<br>`zh-cn`(Chinese simplified) and `en`(English) are currently supported in the wallet.|
+  |lang|The wallet will pass the current locale, and the gateway should handle it to provide i18n support.<br>`zh-cn`(Chinese simplified), `en`(English) and 5 other languages are currently supported in the wallet.|
   |version|The spec version number(s) currently supported by the web wallet, split by `,`|
   
 ## Response
