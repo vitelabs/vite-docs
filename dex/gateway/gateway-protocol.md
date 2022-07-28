@@ -38,7 +38,7 @@ The following parameter should be appended in response header from Gateway
 ```javascript
 {
   "code": 0,//response code
-  "subCode": 0,//sub code filled in by gateway for debugging
+  "subCode": 0,//sub code filled in by Gateway for debugging
   "msg": null,//additional message filled in by gateway for debugging
   "data":""//response data
 }
@@ -97,7 +97,7 @@ Currently, the following two types have been defined:
 ### `/deposit-info`
 
 Get deposit information by token id and user's Vite address. 
-The gateway should bind user's Vite address to a source chain address, and the web wallet will display a deposit page based on the API response.
+The Gateway should bind user's Vite address to a source chain address, and the web wallet will display a deposit page based on the API response.
 
 * **Method**: `GET`
 
@@ -150,7 +150,7 @@ The gateway should bind user's Vite address to a source chain address, and the w
   ::: tab 1:Bind-by-comment
     A label `memo` and corresponding value are used to mark user's Vite address when depositing EOS. User's Vite address is stored in `label`.
     
-    As `memo` is used in EOS gateway, similarly, `paymentID` can be used for XMR. The 3rd party gateways can define their own `labelName`.
+    As `memo` is used in EOS Gateway, similarly, `paymentID` can be used for XMR. The third party Gateways can define their own `labelName`.
   ```javascript
     {
       "code": 0,
@@ -264,7 +264,7 @@ Verify withdrawal address. The web wallet will use this API to verify the source
 
 ### `/withdraw-fee`
 
-Get gateway withdrawal fee.
+Get Gateway withdrawal fee.
 
 * **Method**: `GET`
 
@@ -304,7 +304,7 @@ Get gateway withdrawal fee.
     ```
   
 :::tip Withdrawal Process
-1. The user fills in a valid withdrawal amount and source chain withdrawal address, then hits the transfer button. At this time, the web wallet will send a corresponding amount of gateway tokens to the gateway address on Vite chain. The source chain withdrawal address is stored in the comment of the transaction.
+1. The user fills in a valid withdrawal amount and source chain withdrawal address, then hits the transfer button. At this time, the web wallet will send a corresponding amount of Gateway tokens to the Gateway address on Vite chain. The source chain withdrawal address is stored in the comment of the transaction.
 2. The Gateway listens for the transactions on the withdrawal address and waits for necessary confirmations.
 3. After the Gateway confirms the withdrawal transaction on Vite chain, it initiates a transaction to send the same amount of the source chain tokens to user's withdrawal address on the source chain.
 4. The Gateway listens for the transaction on the source chain, and must resend the transaction in case it doesn't get confirmed.
@@ -319,7 +319,7 @@ According to [VEP 8: AccountBlock Data Content Type Definition](../../vep/vep-8.
 |:--|:---|
 |2 Byte,uint16|1 Byte,uint8|
 
-For gateway transactions, **VEP-8 Type** is fixed at `3011`, or `0x0bc3` in hexadecimal format
+For Gateway transactions, **VEP-8 Type** is fixed at `3011`, or `0x0bc3` in hexadecimal format
 
 **Type** is the `type` parameter returned by `/meta-info` API
 
@@ -488,7 +488,7 @@ Get historical withdrawal records
   |:--|:---|
   |0|Request is successful|
   |1|Invalid request parameter|
-  |2|Internal gateway error|
+  |2|Internal Gateway error|
 
 ## Version of the Specification
 ### Current Version
