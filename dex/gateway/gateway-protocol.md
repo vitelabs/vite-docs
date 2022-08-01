@@ -55,15 +55,15 @@ Get Gateway information by token id
 
   |Name|Description|Data Type|Required|
   |:--|:---|:---:|:---:|
-  |tokenId|Token id|string|true|
+  |tokenId|Token id|string|yes|
   
 * **Response**
 
   |Name|Description|Data Type|Required|
   |:--|:---|:---:|:---:|
-  |type|Binding type. Allowed value: <br>`0`Independent address mode<br>`1`Bind-by-comment mode|int|true|
-  |depositState|Deposit channel state. Allowed value: `OPEN`, `MAINTAIN`, `CLOSED`|string|true|
-  |withdrawState|Withdrawal channel state. Allowed value: `OPEN`, `MAINTAIN`, `CLOSED`|string|true|
+  |type|Binding type. Allowed value: <br>`0`Independent address mode<br>`1`Bind-by-comment mode|int|yes|
+  |depositState|Deposit channel state. Allowed value: `OPEN`, `MAINTAIN`, `CLOSED`|string|yes|
+  |withdrawState|Withdrawal channel state. Allowed value: `OPEN`, `MAINTAIN`, `CLOSED`|string|yes|
 
 :::tip Binding Types
 The web wallet needs to use binding types to render different deposit/withdrawal UI(s) and build different requests, while the gateway needs to use it to return different responses. 
@@ -105,19 +105,19 @@ The Gateway should bind user's Vite address to a source chain address, and the w
 
   |Name|Description|Data Type|Required|
   |:--|:---|:---:|:---:|
-  |tokenId|Gateway token id|string|true|
-  |walletAddress|User's Vite address|string|true|
+  |tokenId|Gateway token id|string|yes|
+  |walletAddress|User's Vite address|string|yes|
   
 * **Response**
 
 	|Name|Description|Data Type|Required|
 	|:--|:---|:---:|:---:|
-	|depositAddress|Deposit address|string|true|
-	|labelName|Label name, required if type=1|string|false|
-	|label|Label value, required if type=1|string|false|
-	|minimumDepositAmount|Minimum deposit amount|string|true|
-	|confirmationCount|Confirmations on source chain|int|true|
-	|noticeMsg|Extra message filled in by gateway|string|false|
+	|depositAddress|Deposit address|string|yes|
+	|labelName|Label name, required if type=1|string|no|
+	|label|Label value, required if type=1|string|no|
+	|minimumDepositAmount|Minimum deposit amount|string|yes|
+	|confirmationCount|Confirmations on source chain|int|yes|
+	|noticeMsg|Extra message filled in by gateway|string|no|
 
 * **Example**
 
@@ -186,19 +186,19 @@ Get withdrawal information by token id and user's Vite address. The web wallet w
 
   |Name|Description|Data Type|Required|
   |:--|:---|:---:|:---:|
-  |tokenId|Gateway token id|string|true|
-  |walletAddress|User's Vite address|string|true|
+  |tokenId|Gateway token id|string|yes|
+  |walletAddress|User's Vite address|string|yes|
   
   
 * **Response**
 
   |Name|Description|Data Type|Required|
   |:--|:---|:---:|:---:|
-  |minimumWithdrawAmount|Minimum withdrawal amount|string|true|
-  |maximumWithdrawAmount|Maximum withdrawal amount|string|true|
-  |gatewayAddress|Gateway address on Vite chain. The web wallet will send an amount of Gateway Tokens to the address for withdrawal|string|true|
-  |labelName|Label name, required if type=1|string|false|
-  |noticeMsg|Extra message filled in by Gateway|string|false|
+  |minimumWithdrawAmount|Minimum withdrawal amount|string|yes|
+  |maximumWithdrawAmount|Maximum withdrawal amount|string|yes|
+  |gatewayAddress|Gateway address on Vite chain. The web wallet will send an amount of Gateway Tokens to the address for withdrawal|string|yes|
+  |labelName|Label name, required if type=1|string|no|
+  |noticeMsg|Extra message filled in by Gateway|string|no|
 
 * **Example**
 
@@ -231,17 +231,17 @@ Verify withdrawal address. The web wallet will use this API to verify the source
 
   |Name|Description|Data Type|Required|
   |:--|:---|:---:|:---:|
-  |tokenId|Gateway token id|string|true|
-  |withdrawAddress|User's withdrawal address on the source chain|string|true|
-  |labelName|Label name, required if type=1|string|false|
+  |tokenId|Gateway token id|string|yes|
+  |withdrawAddress|User's withdrawal address on the source chain|string|yes|
+  |labelName|Label name, required if type=1|string|no|
   
   
 * **Response**
 
   |Name|Description|Data Type|Required|
   |:--|:---|:---:|:---:|
-  |isValidAddress|Is the user's withdrawal address valid?|bool|true|
-  |message|Error message|string|false|
+  |isValidAddress|Is the user's withdrawal address valid?|bool|yes|
+  |message|Error message|string|no|
   
 
 * **Example**
@@ -272,10 +272,10 @@ Get Gateway withdrawal fee.
 
   |Name|Description|Data Type|Required|
   |:--|:---|:---:|:---:|
-  |tokenId|Gateway token id|string|true|
-  |walletAddress|User's Vite address|string|true|
-  |amount|Withdrawal amount|string|true|
-  |containsFee|Is the fee included in the original withdrawal amount?<br>If this is false, then `amount` refers to actual amount transferred. The Gateway will calculate the transaction fee based on this amount.<br>If this is true, then `amount` refers to the sum of actual amount transferred and the transaction fee. The Gateway will subsequently derive the actual amount transferred and the transaction fee. Usually this is used in a full withdrawal.|bool|true|
+  |tokenId|Gateway token id|string|yes|
+  |walletAddress|User's Vite address|string|yes|
+  |amount|Withdrawal amount|string|yes|
+  |containsFee|Is the fee included in the original withdrawal amount?<br>If this is no, then `amount` refers to actual amount transferred. The Gateway will calculate the transaction fee based on this amount.<br>If this is yes, then `amount` refers to the sum of actual amount transferred and the transaction fee. The Gateway will subsequently derive the actual amount transferred and the transaction fee. Usually this is used in a full withdrawal.|bool|yes|
 
 
   
@@ -283,7 +283,7 @@ Get Gateway withdrawal fee.
 
   |Name|Description|Data Type|Required|
   |:--|:---|:---:|:---:|
-  |fee|Withdrawal fee|string|true|
+  |fee|Withdrawal fee|string|yes|
 
 * **Example**
 
@@ -358,33 +358,33 @@ Get historical deposit records.
 
   |Name|Description|Data Type|Required|
   |:--|:---|:---:|:---:|
-  |tokenId|Gateway token id|string|true|
-  |walletAddress|User's Vite address|string|true|
-  |pageNum|Page index, starting from 1|int|true|
-  |pageSize|Page size|int|true|
+  |tokenId|Gateway token id|string|yes|
+  |walletAddress|User's Vite address|string|yes|
+  |pageNum|Page index, starting from 1|int|yes|
+  |pageSize|Page size|int|yes|
   
   
 * **Response**
 
   |Name|Description|Data Type|Required|
   |:--|:---|:---:|:---:|
-  |totalCount|Total deposit records|int|true|
-  |depositRecords|List of deposit records|list|false|
-  |inTxExplorerFormat|The transaction url on the source chain explorer. Replace {$tx} with the specific `inTxHash`|string|true|
-  |outTxExplorerFormat|The transaction url on Vite explorer. Replace {$tx} with the specific `outTxHash`|string|true|
+  |totalCount|Total deposit records|int|yes|
+  |depositRecords|List of deposit records|list|no|
+  |inTxExplorerFormat|The transaction url on the source chain explorer. Replace {$tx} with the specific `inTxHash`|string|yes|
+  |outTxExplorerFormat|The transaction url on Vite explorer. Replace {$tx} with the specific `outTxHash`|string|yes|
   
 * ***Definition of `depositRecords`***
 
   |Name|Description|Data Type|Required|
   |:--|:---|:---:|:---:|
-  |inTxHash|The deposit transaction hash on the source chain|string|true|
-  |inTxConfirmedCount|Confirmations conducted on source chain|int|false|
-  |inTxConfirmationCount|Confirmations required on source chain|int|false|
-  |outTxHash|The deposit transaction hash on Vite chain|string|false|
-  |amount|Deposit amount|string|true|
-  |fee|Gateway fee|string|true|
-  |state|Transaction state. Allowed value: <br>`OPPOSITE_PROCESSING` Awaiting confirmation on the source chain<br>`OPPOSITE_CONFIRMED` Confirmed on the source chain<br>`OPPOSITE_CONFIRMED_FAIL` Transaction failed on the source chain<br>`BELOW_MINIMUM` Transaction aborted due to insufficient deposit amount<br>`TOT_PROCESSING` Gateway tokens sent out on Vite chain<br>`TOT_CONFIRMED` Deposit successful<br>`FAILED` Deposit failed|string|true|
-  |dateTime|Deposit time in millisecond|string|true|
+  |inTxHash|The deposit transaction hash on the source chain|string|yes|
+  |inTxConfirmedCount|Confirmations conducted on source chain|int|no|
+  |inTxConfirmationCount|Confirmations required on source chain|int|no|
+  |outTxHash|The deposit transaction hash on Vite chain|string|no|
+  |amount|Deposit amount|string|yes|
+  |fee|Gateway fee|string|yes|
+  |state|Transaction state. Allowed value: <br>`OPPOSITE_PROCESSING` Awaiting confirmation on the source chain<br>`OPPOSITE_CONFIRMED` Confirmed on the source chain<br>`OPPOSITE_CONFIRMED_FAIL` Transaction failed on the source chain<br>`BELOW_MINIMUM` Transaction aborted due to insufficient deposit amount<br>`TOT_PROCESSING` Gateway tokens sent out on Vite chain<br>`TOT_CONFIRMED` Deposit successful<br>`FAILED` Deposit failed|string|yes|
+  |dateTime|Deposit time in millisecond|string|yes|
 
 * **Example**
 
@@ -426,32 +426,32 @@ Get historical withdrawal records
 
   |Name|Description|Data Type|Required|
   |:--|:---|:---:|:---:|
-  |tokenId|Gateway token id|string|true|
-  |walletAddress|User's Vite address|string|true|
-  |pageNum|Page index, starting from 1|int|true|
-  |pageSize|Page size|int|true|
+  |tokenId|Gateway token id|string|yes|
+  |walletAddress|User's Vite address|string|yes|
+  |pageNum|Page index, starting from 1|int|yes|
+  |pageSize|Page size|int|yes|
   
 * **Response**
 
   |Name|Description|Data Type|Required|
   |:--|:---|:---:|:---:|
-  |totalCount|Total withdrawal records|int|true|
-  |withdrawRecords|List of withdrawal records|list|false|
-  |inTxExplorerFormat|The transaction url on Vite explorer. Replace {$tx} with the specific `inTxHash`|string|true|
-  |outTxExplorerFormat|The transaction url on the source chain explorer. Replace {$tx} with the specific `outTxHash`|string|true|
+  |totalCount|Total withdrawal records|int|yes|
+  |withdrawRecords|List of withdrawal records|list|no|
+  |inTxExplorerFormat|The transaction url on Vite explorer. Replace {$tx} with the specific `inTxHash`|string|yes|
+  |outTxExplorerFormat|The transaction url on the source chain explorer. Replace {$tx} with the specific `outTxHash`|string|yes|
   
 * ***Definition of `withdrawRecords`***
 
   |Name|Description|Data Type|Required|
   |:--|:---|:---:|:---:|
-  |inTxHash|The withdrawal transaction hash on Vite chain|string|true|
-  |inTxConfirmedCount|Confirmations conducted on Vite chain|int|false|
-  |inTxConfirmationCount|Confirmations required on Vite chain|int|false|
-  |outTxHash|The withdrawal transaction hash on the source chain|string|false|
-  |amount|Actual amount transferred|string|true|
-  |fee|Gateway fee|string|true|
-  |state|Transaction state. Allowed value: <br>`TOT_PROCESSING` Awaiting confirmation on Vite chain<br>`TOT_CONFIRMED` Confirmed on Vite chain<br>`TOT_EXCEED_THE_LIMIT` Transaction failed due to exceeding the maximum limit<br>`WRONG_WITHDRAW_ADDRESS` Transaction failed due to invalid withdrawal address<br>`OPPOSITE_PROCESSING` Source chain tokens sent out<br>`OPPOSITE_CONFIRMED` Withdrawal successful <br>`FAILED` Withdraw failed|string|true|
-  |dateTime|Withdrawal time in millisecond|string|true|
+  |inTxHash|The withdrawal transaction hash on Vite chain|string|yes|
+  |inTxConfirmedCount|Confirmations conducted on Vite chain|int|no|
+  |inTxConfirmationCount|Confirmations required on Vite chain|int|no|
+  |outTxHash|The withdrawal transaction hash on the source chain|string|no|
+  |amount|Actual amount transferred|string|yes|
+  |fee|Gateway fee|string|yes|
+  |state|Transaction state. Allowed value: <br>`TOT_PROCESSING` Awaiting confirmation on Vite chain<br>`TOT_CONFIRMED` Confirmed on Vite chain<br>`TOT_EXCEED_THE_LIMIT` Transaction failed due to exceeding the maximum limit<br>`WRONG_WITHDRAW_ADDRESS` Transaction failed due to invalid withdrawal address<br>`OPPOSITE_PROCESSING` Source chain tokens sent out<br>`OPPOSITE_CONFIRMED` Withdrawal successful <br>`FAILED` Withdraw failed|string|yes|
+  |dateTime|Withdrawal time in millisecond|string|yes|
 
 * **Example**
 
