@@ -99,7 +99,7 @@ To use ViteX Private REST API, you must authorize it at [Trade Delegation](https
 
 * By providing **API Key** and **API Secret** to a trustworthy third party market-maker (instead of private key or mnemonics), your fund is safe in your ViteX account and it cannot be misappropriated. 
 * You should enable the API on selected trading pairs explicitly. Attempting to trade on unauthorized pairs will cause error. 
-* Authorization can be canceled at any time. In this case, even though the API Key and API Secret are still valid, ViteX will reject API trading requests eventually. 
+* Authorization can be canceled at any time. In this case, even if the API Key and API Secret are still valid, ViteX can still reject API trading requests. 
 
 It's highly recommended to enable API authorization ONLY on specific trading pairs that you wish to trade.  
 
