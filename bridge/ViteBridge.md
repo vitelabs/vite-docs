@@ -1,6 +1,6 @@
 ---
 order: 1
-title: ViteBridge White Paper
+title: ViteBridge Whitepaper
 ---
 
 # ViteBridge: A Generic Decentralized Cross-Chain Transfer Protocol 
