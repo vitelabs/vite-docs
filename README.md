@@ -10,7 +10,7 @@ aside: true
 
 ## Get Started
 
-* **[Vite](./start.md)**: A fast, fee-less blockchain that adopts a message-driven, asynchronous architecture and a DAG-based ledger.  [White Paper](https://github.com/vitelabs/whitepaper/blob/master/vite_en.pdf)
+* **[Vite](./start.md)**: A fast, fee-less blockchain that adopts a message-driven, asynchronous architecture and a DAG-based ledger.  [Whitepaper](https://github.com/vitelabs/whitepaper/blob/master/vite_en.pdf)
 * **[Cross-Chain Bridge](./bridge/vitebridge.md)**: ViteBridge - Bridging every blockchain in a multi-chain future.
 * **[DEX](./dex/)**: ViteX - Cross-chain exchange by the community, for the community.
 * **[Smart Contract](./contract/)**: A guide for writing and deploying smart contracts on Vite.
