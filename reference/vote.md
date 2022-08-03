@@ -3,10 +3,10 @@
 ::: tip
 Please note this is not a technical document, but mainly describes voting-related topics. Technical details will be introduced in the yellow paper.
 
-The Definitions of Terms:
-* **Voting**：A solution of on-chain governance by calculating the Vite coins held by voter as voting weight to elect super node.
-* **Super node**： The node in snapshot consensus group who is eligible for producing snapshot block.
-* **Delegated node**： The node in delegated consensus group who is eligible for producing blocks for corresponding smart contract.
+Term Definitions:
+* **Voting**：A solution of on-chain governance by calculating the VITE coins held by voter as voting weight to elect super node.
+* **Super node**：The node in snapshot consensus group who is eligible for producing snapshot block.
+* **Delegated node**：The node in delegated consensus group who is eligible for producing blocks for corresponding smart contract.
 :::
 
 ## What is voting
