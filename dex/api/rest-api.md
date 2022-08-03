@@ -107,7 +107,7 @@ It's highly recommended to enable API authorization ONLY on specific trading pai
 :::tip Delegation Address and Quota
 ViteX API will generate a unique delegation address for each user. Orders placed by the API are signed by the delegation address instead of your private key. Therefore, **DO NOT give your private key or account mnemonics to anyone**.
 
-Meanwhile, Quota of delegation address is zero by default. Users need to provide Quota to the address.
+Meanwhile, Quota in the delegation address is zero by default. Users need to provide Quota to the address.
 :::
 
 ### Trigger Limit
