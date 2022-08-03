@@ -105,7 +105,7 @@ To use ViteX Private REST API, you must authorize it on [Trade Delegation](https
 It's highly recommended to enable API authorization ONLY on specific trading pairs that you wish to trade.  
 
 :::tip Delegation Address and Quota
-ViteX API service will generate a unique delegation address for each user. Orders placed by the API are signed by the delegation address instead of your private key. Therefore, **DO NOT give your private key or account mnemonics to anyone**.
+ViteX API will generate a unique delegation address for each user. Orders placed by the API are signed by the delegation address instead of your private key. Therefore, **DO NOT give your private key or account mnemonics to anyone**.
 
 Meanwhile, Quota of delegation address is zero by default. Users need to provide Quota to the address.
 :::
