@@ -7,10 +7,10 @@ order: 4
 ## Use Hummingbot on ViteX
 
 :::tip ViteX API Key
-If you don't have a ViteX API Key, please go to [https://x.vite.net/](https://x.vite.net/tradeOpenapi) to generate one. After acquiring an API private key, you are advised to authorize delegation of selected trading pairs and pledge enough VITE for Quota to the delegated address.
+If you don't have a ViteX API Key, please go to [https://x.vite.net/](https://x.vite.net/tradeOpenapi) to generate one. After acquiring an API private key, you are required to authorize delegation of selected trading pairs and pledge enough VITE for Quota to the delegated address.
 :::
 
-The following instructions are for Linux. To install a Linux virtual machine on a Mac or PC, you may use [VirtualBox](https://virtualbox.org).
+The following instructions are for Linux. You can execute in a virtualVM in AWS Cloud or simply using [VirtualBox](https://virtualbox.org) on a Mac or PC.
 
 ### Install Hummingbot with Docker
 
@@ -28,7 +28,6 @@ chmod a+x install-docker-ubuntu.sh
 ```
 
 #### Install Hummingbot
-(In the .sh scripts, you may need to prepend `docker` calls with `sudo` to make sure you have the right privilege.)
 
 ```bash
 # 1. Download Hummingbot create, start, and update scripts
@@ -40,13 +39,13 @@ wget https://raw.githubusercontent.com/LeonardoBill/hummingbot/vitex-connector-p
 chmod a+x *.sh
 
 # 3. Create a hummingbot instance
-./create.sh
+sudo ./create.sh
 ```
 
 #### Start Bot
 
 ```bash
-./start.sh
+sudo ./start.sh
 ```
 
 ### Install Hummingbot from Source
@@ -88,4 +87,6 @@ Visit [Hummingbot configuration](https://docs.hummingbot.io/operation/password)
 #### Useful Links
 [Hummingbot MM on ViteX Exchange, Windows, Linux, or on VPS for Newbie](https://www.youtube.com/watch?v=zX41hng1Mq4)
 
-
+### Tips
+- Recommend to stake 2000 VITE to your agent address for Quota, otherwise when the bot frequently places or cancels orders(if order_refresh_time < 60s), there may be lack of Quota which will result in placing/canceling order failed.
+- You must fill in your origin Vite address rather than the agent address when it prompts `Enter your Vite address`.

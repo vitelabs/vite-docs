@@ -118,27 +118,33 @@ Now the Ubuntu installation will start. Please wait in patience. After the insta
 
 ![install-23](./assets/ledger-install/install-23.png)
 
-## Prepare the source code compilation environment
+## Install vite app
 Click Activities, input "terminal" in the search box, and click to open.
 
 ![](./assets/ledger-install/config-1.jpg)
 
 ![](./assets/ledger-install/config-2.jpg)
 
-Execute the following command to install the required software packages.
-```shell
-sudo apt install git build-essential autoconf python3-venv python3-dev libudev-dev libusb-1.0-0-dev gcc-arm-none-eabi gcc-multilib g++-multilib libtinfo5
-```
-During the installation process, you will be asked to enter the root password. When asked whether to continue, type "Y".
+### Prerequisites
+- ledger-nano-s with firmwire version >= v2.1.0, refer to [Update Firmware](https://support.ledger.com/hc/en-us/articles/360002731113-Update-Ledger-Nano-S-firmware?docs=true) if your ledger doesn`t meet the requirement.
 
-After the installation is successful, execute the following command to download the source code and prepare the compilation environment.
-```shell
-git clone https://github.com/vitelabs/ledger-app-vite.git
-cd ledger-app-vite/
-source prepare-devenv.sh
+### Using docker to build the application
+1. install git && docker in the virtualVM
 ```
+sudo apt install git docker.io
+```
+2. Make app.elf, refer to [Ledger Official Document](https://developers.ledger.com/docs/nano-app/build/)
+```
+git clone https://github.com/LedgerHQ/ledger-app-builder && cd ledger-app-builder
+sudo docker build -t ledger-app-builder:latest .
+cd ../ && git clone https://github.com/vitelabs/ledger-app-vite.git && cd ledger-app-vite
+sudo docker run --rm -ti -v "$(realpath .):/app" ledger-app-builder:latest
+make
+```
+3. The build is successfull if you see app.elf file in bin/app.elf in the docker container 
+4. Exit the docker container.
 
-## Compile and Install
+### Load the application from inside the container
 Insert the Ledger Nano S device into the USB port of the computer.
 
 ![ledger-1](./assets/ledger-install/ledger-1.jpg)
@@ -153,8 +159,11 @@ Click the USB icon in the lower right corner of the VM window, select Ledger Nan
 
 ![build-2](./assets/ledger-install/build-2.png)
 
-Run the following command to compile and install the Vite App firmware to the Ledger Nano S device.
+Run the following command to load the Vite App to the Ledger Nano S device.
 ```shell
+cd ~/ledger-app-vite
+sudo docker run --rm -ti -v "/dev/bus/usb:/dev/bus/usb" -v "$(realpath .):/app"
+--privileged ledger-app-builder:latest
 make load
 ```
 During the installation process, you will be asked to enter the PIN code, just follow the instructions.
@@ -174,6 +183,10 @@ Now Vite should appear on the device's main screen. Congratulations, you have su
 :::tip Uninstall
 Execute the following command and follow the instructions if you need to uninstall Vite App from the device.
 ```shell
+sudo docker run --rm -ti -v "/dev/bus/usb:/dev/bus/usb" -v "$(realpath .):/app"
+--privileged ledger-app-builder:latest
 make delete
 ```
 :::
+
+For more info, refer to [Install viteApp into ledger-nano-s](https://github.com/vitelabs/ledger-app-vite/blob/master/Install.md#install-viteapp-into-ledger-nano-s)
