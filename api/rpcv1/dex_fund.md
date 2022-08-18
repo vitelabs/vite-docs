@@ -2,7 +2,7 @@
 sidebarDepth: 4
 ---
 
-## RPC interface
+## DexFund
 
 **Supported protocol:**
 
@@ -191,6 +191,54 @@ query order by tx hash which user singed for new order
         "owner": "vite_050697d3810c30816b005a03511c734c1159f50907662b046f",
         "quoteTokenType": 1
     }
+}
+```
+:::
+
+### dexfund_getAllTradePairs
+
+- **Parameters**: 
+
+- **Returns**: 
+
+  - `Array<MarketInfo>`: trade pair list
+
+- **Example**:
+
+::: demo
+
+```json tab:Request
+{  
+   "jsonrpc":"2.0",
+   "id":1,
+   "method":"dexfund_getAllTradePairs",
+   "params": []
+}
+```
+
+```json tab:Response
+{
+    "jsonrpc": "2.0",
+    "id": 1,
+    "result": [
+      {
+        "marketId": 1,
+        "marketSymbol": "VTT-000_VITE",
+        "tradeToken": "tti_2736f320d7ed1c2871af1d9d",
+        "quoteToken": "tti_5649544520544f4b454e6e40",
+        "quoteTokenType": 1,
+        "tradeTokenDecimals": 18,
+        "quoteTokenDecimals": 18,
+        "takerBrokerFeeRate": 150,
+        "makerBrokerFeeRate": 100,
+        "allowMine": true,
+        "valid": true,
+        "owner": "vite_ab24ef68b84e642c0ddca06beec81c9acb1977bbd7da27a87a",
+        "creator": "vite_ab24ef68b84e642c0ddca06beec81c9acb1977bbd7da27a87a",
+        "stopped": false,
+        "timestamp": 1564239218
+      }
+    ] 
 }
 ```
 :::

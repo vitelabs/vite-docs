@@ -1745,6 +1745,8 @@ Return event logs generated in contract response blocks by specified height rang
       * `fromHeight`: `uint64` Start height. `0` means starting from the latest account block
       * `toHeight`: `uint64` End height. `0` means no specific ending account block
     * `topics`: `[][]Hash` Prefix of topics
+    * `pageIndex`: `uint64` page index.
+    * `pageSize`: `uint64` page size. The value should be less than 1000 
 
 - **Returns**:  
 	* `Array<VmlogMessage>` 
