@@ -12,7 +12,7 @@ parent:
 
 **ViteX Coin, VX**, is the coin native to the ViteX platform. It is mined exclusively by the ViteX community and is used to allocate rewards back to the community.
 
-VX holders can receive daily **ViteX Dividends** from a shared dividend pool which aggregates all trading fees accumulated by ViteX and redistributes back to VX holders.
+VX holders can receive daily **ViteX Rewards** from a shared reward pool which aggregates all trading fees accumulated by ViteX and redistributes back to VX holders.
 
 See: [VX One Pager](./one-page.html)
 :::
@@ -21,7 +21,7 @@ See: [VX One Pager](./one-page.html)
 
 * **Features**
   - On-chain order matching
-  - Smart contract enabled trading fee collection and dividend distribution 
+  - Smart contract enabled trading fee collection and reward distribution 
   - Listing a new trading pair only requires 10,000 VITE
 * **Truly Decentralized**
   - Anyone can become a ***ViteX Operator***
@@ -35,7 +35,7 @@ See: [VX One Pager](./one-page.html)
 
 * **Total Supply**: **29,328,807.8**
 * **Smallest Denomination**: $10^{-18}$
-* **Features**: VX holders receive daily dividends from a shared dividend pool which aggregates the trading fees accumulated by ViteX and redistributes back to VX holders.
+* **Features**: VX holders receive daily rewards from a shared reward pool which aggregates the trading fees accumulated by ViteX and redistributes back to VX holders.
 * **Distribution**: No pre-sale. The following mining methods are the only way to obtain VX:
   - Trading as Mining: Trade in designated BTC, ETH, VITE and USDT markets and receive VX rewards.
   - Staking as Mining: Stake VITE to help ViteX obtain higher level operational Quota and receive VX rewards.
@@ -72,20 +72,20 @@ The release of VX will be allocated daily as the breakdown below:
 * Market-making: ***15%***
 * Team: ***10%***
 
-### VX Holder Dividends
+### VX Holder Rewards
 
-All trading fees charged by ViteX will be put into a shared dividend pool and distributed at a daily rate of **1%**. For any given day, the fees collected of the day will be distributed completely in the next 100 days.
+All trading fees charged by ViteX will be put into a shared reward pool and distributed at a daily rate of **1%**. For any given day, the fees collected of the day will be distributed completely in the next 100 days.
 
-To receive your dividends:
-* A minimum of **10 VX** must be staked in the exchange account. Please note that VX held in a wallet or exchange account will not make you eligible for dividends;
-* Participant is entitled to receive dividends starting with the next distribution immediately after submission of staking request;
-* Staked VX will be released after the 7-day (7 complete cycles) waiting period once retrieved. No dividend will be received during this waiting period.
+To receive your rewards:
+* A minimum of **10 VX** must be staked in the exchange account. Please note that VX held in a wallet or exchange account will not make you eligible for rewards;
+* Participant is entitled to receive rewards starting with the next distribution immediately after submission of staking request;
+* Staked VX will be released after the 7-day (7 complete cycles) waiting period once retrieved. No reward will be received during this waiting period.
 Users can enable automatic staking. Mined VX will be automatically staked once enabled, purchased VX is not subject to this function.
 
 :::tip Attention
-Trading fees charged by Operator (Operator Fee) are excluded from dividends. 
+Trading fees charged by Operator (Operator Fee) are excluded from rewards. 
 
-Starting from December 8, 2019, base fees collected in **VITE** are not sent to the dividend pool but will be destroyed. The cumulative VITE in the dividend pool were destroyed as well. 
+Starting from December 8, 2019, base fees collected in **VITE** are not sent to the reward pool but will be destroyed. The cumulative VITE in the reward pool were destroyed as well. 
 :::
 
 ## Mining Details
@@ -267,7 +267,7 @@ Unlike other decentralized exchanges, ViteX does not charge fees for order place
 
 **Base Trading Fee**: ***0.2%***
 
-Base trading fee applies to all trading pairs on ViteX. All base trading fees are put into the dividend pool for further distribution to VX holders. 
+Base trading fee applies to all trading pairs on ViteX. All base trading fees are put into the reward pool for further distribution to VX holders. 
 
 **Operator Fee**: ***0 - 0.2%***
 
