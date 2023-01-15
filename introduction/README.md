@@ -7,7 +7,11 @@ parent:
 # Introduction
 
 ::: tip
-This document is only for introduction. if you need more detail on vite, please move to [White Paper](https://github.com/vitelabs/whitepaper/blob/master/vite_en.pdf)
+This document is only for introduction. For more technical details, see our [White Paper](https://github.com/vitelabs/whitepaper/blob/master/vite_en.pdf)
+:::
+
+::: tip
+See our [new documentation (beta)](https://docs.vite.org/vuilder-docs/vite-basics/) for a simpler introduction of Vite's basic features and quickstarts for developing on the Vite chain.
 :::
 
 ## What is Vite？

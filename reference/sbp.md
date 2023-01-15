@@ -83,14 +83,14 @@ The rewards are equally split in 2 parts:
 **A cycle**: Refers to 1152 rounds, approximately 1 day. The first cycle starts at genesis snapshot.
 
 * `Q`: the total reward of the SBP in one cycle
-* `l`: the number of blocks that are produced by the SBP in one cycle
+* `n`: the number of blocks that are produced by the SBP in one cycle
 * `m`: the number of blocks that are expected to produce by the SBP in one cycle. If no block is produced by any SBP in a round, `m` should substrate the target block producing number of that round
 * `X`: the total number of blocks that are produced by all SBP nodes in one cycle
 * `W`: the total number of votes of the top 100 SBPs in the last round of one cycle, plus the total staking amounts of registration of the top 100 SBPs (1m VITE for each SBP in the Mainnet)
 * `V`: the number of votes of the SBP in the last round of one cycle, plus the staking amounts of registration of this node (1m VITE for each SBP in the Mainnet)
 * `R`: The reward for each block, fixed at `0.951293759512937595` VITE in the first year
 
-$$Q = \frac{l}{m}*\frac{V}{W}*X*R*0.5 + l*R*0.5$$
+$$Q = \frac{n}{m}*\frac{V}{W}*X*R*0.5 + n*R*0.5$$
 
 Note:
 * According to the above formula, if one SBP ranks more than 100 in the last round of a cycle, the reward for the SBP in this cycle is 0

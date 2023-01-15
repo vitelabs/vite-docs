@@ -8,6 +8,10 @@ aside: true
 
 # Vite Documentation
 
+::: tip
+See our [new documentation (beta)](https://docs.vite.org/vuilder-docs/vite-basics/) for a simpler introduction of Vite's basic features and quickstarts for developing on the Vite chain.
+:::
+
 ## Get Started
 
 * **[Vite](./start.md)**: A fast, fee-less blockchain that adopts a message-driven, asynchronous architecture and a DAG-based ledger.  [Whitepaper](https://github.com/vitelabs/whitepaper/blob/master/vite_en.pdf)

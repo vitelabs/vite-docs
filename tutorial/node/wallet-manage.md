@@ -17,15 +17,15 @@ This document mainly introduces how to config wallet on full node. Before starti
 
 ### Start Full Node
 
-Follow [Full Node Installation][install] to start a full node.
+Follow the instructions at [Full Node Installation][install] to start a full node.
 
 ### Create a New Wallet
   
-Execute the following command
+Execute the following command:
 ```javascript
 ./gvite rpc ~/.gvite/maindata/gvite.ipc wallet_createEntropyFile '["Your_Password"]'
 ```
-This will give you below result
+This will give you the below result:
 ```json
 {
     "jsonrpc": "2.0", 
@@ -46,7 +46,7 @@ Run `exit` to abort
 
 ## Recover Wallet from Mnemonic
 
-Execute the following command
+Execute the following command:
 
 ```javascript
 vite.wallet_recoverEntropyFile("Your_Mnemonic", "Your_Password")
