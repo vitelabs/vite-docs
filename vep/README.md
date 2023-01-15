@@ -19,3 +19,4 @@ parent:
 * [VEP 13: Rules of SBP Rewards Calculation and Distribution](./vep-13.html)
 * [VEP 15: Introduce Block Producing Rate in SBP Selection](./vep-15.html)
 * [VEP 16: Specification of Address Generation](./vep-16.html)
+* [VEP 19: Implement Synchronous Function Calls to Vite Contracts](./vep-19.html)
