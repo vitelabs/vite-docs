@@ -15,7 +15,7 @@ In Figure 1, each transaction contains an explicit hash reference to snapshot bl
 
 In addition to "explicit" timestamp, there is another "implicit" timestamp in the system. This "implicit" timestamp is the latest transaction hash for each account recorded in snapshot block, representing the "confirmation time" of a transaction.
 
-The two types of timestamp cause two-way dependency between transactiongits and snapshot chain, as shown in Figure 2:
+The two types of timestamp cause two-way dependency between transactions and snapshot chain, as shown in Figure 2:
 
 ![figure](./assets/timestamps.png)<div align="center">Figure 2. Explicit Timestamps and Implicit Timestamps</div>
 
